@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>فروشگاه حلما</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body {
+    background: linear-gradient(135deg, #93c5fd 0%, #a7f3d0 100%);
+  }
+</style>
+</head>
+<body class="min-h-screen flex flex-col font-vazir bg-gradient-to-br from-sky-200 to-teal-100 text-gray-900">
+<header class="bg-white bg-opacity-70 backdrop-blur-md shadow-md sticky top-0 z-30">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-3xl font-bold text-blue-700 select-none">فروشگاه حلما</h1>
+    <nav class="space-x-6 hidden md:flex text-lg">
+      <a href="#about" class="hover:text-teal-600 transition">درباره حلما</a>
+      <a href="#gallery" class="hover:text-teal-600 transition">گالری</a>
+      <a href="#pricing" class="hover:text-teal-600 transition">قیمت‌ها</a>
+      <a href="#contact" class="hover:text-teal-600 transition">تماس</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" /></svg>
+    </button>
+  </div>
+  <nav id="mobileMenu" class="md:hidden hidden bg-white bg-opacity-80 backdrop-blur-md shadow-inner px-6 py-4 space-y-3 text-lg">
+    <a href="#about" class="block hover:text-teal-600 transition">درباره حلما</a>
+    <a href="#gallery" class="block hover:text-teal-600 transition">گالری</a>
+    <a href="#pricing" class="block hover:text-teal-600 transition">قیمت‌ها</a>
+    <a href="#contact" class="block hover:text-teal-600 transition">تماس</a>
+  </nav>
+</header>
+
+<main class="flex-grow container mx-auto px-6 py-12">
+  <section id="about" class="mb-20 text-center max-w-3xl mx-auto">
+    <h2 class="text-4xl font-extrabold mb-4 text-blue-700">معرفی حلما</h2>
+    <p class="text-lg leading-relaxed text-gray-700">حلما، محصولی منحصربه‌فرد و جذاب که همه را جلب می‌کند! او با زیبایی و شخصیت خاصش تحولی در زندگی شما ایجاد خواهد کرد. همین حالا فرصت خرید این فرد بی‌نظیر را از دست ندهید و زندگی خود را متفاوت کنید.</p>
+  </section>
+
+  <section id="gallery" class="mb-20">
+    <h2 class="text-3xl font-bold mb-8 text-blue-700 text-center">گالری تصاویر حلما</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="rounded-lg overflow-hidden shadow-lg bg-white">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Sheikh_Helma_Church.jpg/640px-Sheikh_Helma_Church.jpg" alt="حلما ۱" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105" />
+        <div class="p-4 text-center font-semibold text-gray-800">حلما - تصویر ۱</div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg bg-white">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Helma_mountain_tourism_iran_01.jpg" alt="حلما ۲" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105" />
+        <div class="p-4 text-center font-semibold text-gray-800">حلما - تصویر ۲</div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg bg-white">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Helma_in_the_desert_iran_2018.JPG" alt="حلما ۳" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105" />
+        <div class="p-4 text-center font-semibold text-gray-800">حلما - تصویر ۳</div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg bg-white">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Helma_panorama_iran_2018.jpg" alt="حلما ۴" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105" />
+        <div class="p-4 text-center font-semibold text-gray-800">حلما - تصویر ۴</div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg bg-white">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Helma_daytime_iran_2018.jpg" alt="حلما ۵" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105" />
+        <div class="p-4 text-center font-semibold text-gray-800">حلما - تصویر ۵</div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg bg-white">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Helma_rest_iran_2018.jpg" alt="حلما ۶" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105" />
+        <div class="p-4 text-center font-semibold text-gray-800">حلما - تصویر ۶</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="mb-20 text-center max-w-4xl mx-auto">
+    <h2 class="text-3xl font-extrabold mb-8 text-blue-700">قیمت‌ها و پکیج‌ها</h2>
+    <div class="flex flex-col md:flex-row gap-8 justify-center">
+      <div class="bg-white rounded-xl shadow-lg p-8 flex-1 hover:shadow-2xl transition-shadow">
+        <h3 class="text-2xl font-bold mb-4 text-teal-700">پکیج پایه</h3>
+        <p class="mb-6 text-gray-700">آشنایی ساده و فرصت بیشتر برای شناخت حلما.</p>
+        <div class="text-4xl font-extrabold text-teal-600 mb-6">۵,۰۰۰,۰۰۰ تومان</div>
+        <button class="bg-teal-600 text-white rounded-lg px-6 py-3 font-semibold hover:bg-teal-700 transition">خرید</button>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-8 flex-1 border-4 border-teal-400 hover:shadow-2xl transition-shadow">
+        <h3 class="text-2xl font-bold mb-4 text-teal-800">پکیج ویژه</h3>
+        <p class="mb-6 text-gray-700">تجربه ویژه و ارتباط نزدیک با حلما.</p>
+        <div class="text-4xl font-extrabold text-teal-700 mb-6">۱۰,۰۰۰,۰۰۰ تومان</div>
+        <button class="bg-teal-700 text-white rounded-lg px-6 py-3 font-semibold hover:bg-teal-800 transition">خرید</button>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-8 flex-1 hover:shadow-2xl transition-shadow">
+        <h3 class="text-2xl font-bold mb-4 text-teal-700">پکیج ویژه‌پلاس</h3>
+        <p class="mb-6 text-gray-700">تمام امکانات به اضافه خدمات اختصاصی حلما.</p>
+        <div class="text-4xl font-extrabold text-teal-600 mb-6">۲۰,۰۰۰,۰۰۰ تومان</div>
+        <button class="bg-teal-600 text-white rounded-lg px-6 py-3 font-semibold hover:bg-teal-700 transition">خرید</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="max-w-3xl mx-auto bg-white bg-opacity-80 backdrop-blur-md rounded-2xl p-10 shadow-md">
+    <h2 class="text-3xl font-extrabold mb-6 text-blue-700 text-center">تماس با ما</h2>
+    <form class="space-y-6" onsubmit="event.preventDefault(); alert('پیام شما ارسال شد!'); this.reset();">
+      <div>
+        <label for="name" class="block mb-2 font-semibold text-gray-800">نام و نام خانوادگی</label>
+        <input type="text" id="name" name="name" required class="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-400" />
+      </div>
+      <div>
+        <label for="email" class="block mb-2 font-semibold text-gray-800">ایمیل</label>
+        <input type="email" id="email" name="email" required class="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-400" />
+      </div>
+      <div>
+        <label for="message" class="block mb-2 font-semibold text-gray-800">پیام شما</label>
+        <textarea id="message" name="message" rows="4" required class="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-400"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="bg-blue-700 text-white font-bold px-8 py-3 rounded-lg hover:bg-blue-800 transition">ارسال پیام</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="bg-blue-700 text-white py-6 text-center select-none">
+  <p>© ۲۰۲۴ فروشگاه حلما. تمامی حقوق محفوظ است.</p>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
