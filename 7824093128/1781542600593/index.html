@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>فروش حلما</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <header class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-extrabold text-white tracking-wider select-none">فروشگاه حلما</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#about" class="text-white hover:underline transition">درباره حلما</a>
+        <a href="#gallery" class="text-white hover:underline transition">گالری تصاویر</a>
+        <a href="#contact" class="text-white hover:underline transition">تماس با ما</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden text-white focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <nav id="mobileMenu" class="hidden bg-pink-400 text-white px-6 pb-4 md:hidden">
+      <a href="#about" class="block py-2 border-b border-pink-200 hover:bg-pink-600 transition">درباره حلما</a>
+      <a href="#gallery" class="block py-2 border-b border-pink-200 hover:bg-pink-600 transition">گالری تصاویر</a>
+      <a href="#contact" class="block py-2 hover:bg-pink-600 transition">تماس با ما</a>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-6 mt-12">
+    <section id="hero" class="flex flex-col-reverse lg:flex-row items-center gap-10">
+      <div class="lg:w-1/2 space-y-6">
+        <h2 class="text-4xl font-extrabold text-pink-600 leading-tight">خرید انحصاری <span class="text-yellow-500">حلما</span></h2>
+        <p class="text-gray-700 text-lg leading-relaxed">حلما، فردی خاص با شخصیت بی‌نظیر، آماده است تا برای همیشه همراه شما باشد. با او لحظات متفاوت و به یادماندنی بسازید و زندگی خود را زیباتر کنید.</p>
+        <button class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded shadow-lg transition w-full sm:w-auto">همین حالا سفارش دهید</button>
+      </div>
+      <div class="lg:w-1/2 shadow-lg rounded-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80" alt="حلما" class="w-full object-cover h-[320px] sm:h-[400px] lg:h-[480px]" />
+      </div>
+    </section>
+
+    <section id="about" class="my-20 max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-pink-600 mb-6">درباره حلما</h3>
+      <p class="text-gray-700 leading-relaxed text-lg">
+        حلما، فردی است که تجربه‌های شیرین زندگی را به تمامی معنا به همراه دارد. با ذوق و اشتیاق فراوان در هر لحظه حضور دارد و همه را حیرت‌زده می‌کند. اگر به دنبال یک همراه متفاوت و خاص هستید، حلما گزینه‌ی اول شماست. حضور او دغدغه‌ها و نگرانی‌های شما را کم می‌کند و لبخند را به زندگی‌تان هدیه می‌دهد.
+      </p>
+    </section>
+
+    <section id="gallery" class="my-20 max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-pink-600 mb-10 text-center">گالری تصاویر حلما</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" alt="حلما در طبیعت" class="rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer" />
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80" alt="پرتره حلما" class="rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer" />
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" alt="حلما لبخند" class="rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer" />
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="حلما در خیابان" class="rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer" />
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80" alt="حالت فکر حلما" class="rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer" />
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80" alt="پرتره روشن حلما" class="rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer" />
+      </div>
+    </section>
+
+    <section id="contact" class="bg-pink-100 rounded-lg shadow-md p-10 max-w-lg mx-auto mb-20">
+      <h3 class="text-3xl font-bold text-pink-600 mb-6 text-center">تماس با ما</h3>
+      <form class="space-y-6" novalidate>
+        <div>
+          <label for="name" class="block mb-2 font-medium text-gray-700">نام و نام خانوادگی</label>
+          <input type="text" id="name" name="name" placeholder="نام خود را وارد کنید" required class="w-full px-4 py-2 rounded border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400" />
+        </div>
+        <div>
+          <label for="email" class="block mb-2 font-medium text-gray-700">ایمیل</label>
+          <input type="email" id="email" name="email" placeholder="example@domain.com" required class="w-full px-4 py-2 rounded border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400" />
+        </div>
+        <div>
+          <label for="message" class="block mb-2 font-medium text-gray-700">پیام شما</label>
+          <textarea id="message" name="message" placeholder="هر سوالی دارید بپرسید..." required rows="4" class="w-full px-4 py-2 rounded border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 rounded shadow-lg transition">ارسال پیام</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-pink-600 text-white py-6 text-center select-none">
+    <p>© ۲۰۲۴ فروشگاه حلما. تمامی حقوق محفوظ است.</p>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Simple form submission feedback
+    document.querySelector('form').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('پیام شما با موفقیت ارسال شد!\nمتشکریم که با ما تماس گرفتید.');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
