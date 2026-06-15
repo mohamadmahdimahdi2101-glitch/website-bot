@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>محمد مهدی احمدی — معرفی</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body { font-family: 'Vazirmatn', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+    /* Simple custom scrollbar for better UX */
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-thumb { background: rgba(100,116,139,0.4); border-radius: 9999px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <header class="bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold">م م</div>
+        <div>
+          <h1 class="text-lg font-semibold">محمد مهدی احمدی</h1>
+          <p class="text-sm text-gray-500">طراح و توسعه‌دهنده وب</p>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-gray-600">
+        <a href="#about" class="hover:text-indigo-600">درباره من</a>
+        <a href="#portfolio" class="hover:text-indigo-600">نمونه‌کارها</a>
+        <a href="#services" class="hover:text-indigo-600">خدمات</a>
+        <a href="#contact" class="hover:text-indigo-600">تماس</a>
+        <a href="#resume" class="ml-4 inline-flex items-center gap-2 bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">دانلود رزومه</a>
+      </nav>
+      <div class="md:hidden">
+        <button id="menuBtn" class="p-2 rounded-md bg-gray-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden px-6 pb-6">
+      <nav class="flex flex-col gap-3">
+        <a href="#about" class="block py-2 px-3 rounded hover:bg-gray-100">درباره من</a>
+        <a href="#portfolio" class="block py-2 px-3 rounded hover:bg-gray-100">نمونه‌کارها</a>
+        <a href="#services" class="block py-2 px-3 rounded hover:bg-gray-100">خدمات</a>
+        <a href="#contact" class="block py-2 px-3 rounded hover:bg-gray-100">تماس</a>
+        <a href="#resume" class="block py-2 px-3 rounded bg-indigo-600 text-white text-center">دانلود رزومه</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 pt-8 pb-16">
+    <!-- Hero -->
+    <section class="grid md:grid-cols-3 gap-8 items-center">
+      <div class="md:col-span-2">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">سلام، من محمد مهدی احمدی هستم</h2>
+        <p class="mt-3 text-gray-600 text-lg">طراح و توسعه‌دهنده وب با تمرکز بر تجربه کاربری و رابط‌های واکنش‌گرا. من ایده‌ها را به محصولاتی کاربرپسند و زیبا تبدیل می‌کنم که عملکرد بالا و ظاهر حرفه‌ای دارند.</p>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a href="#contact" class="inline-flex items-center gap-2 bg-indigo-600 text-white px-5 py-3 rounded-md hover:bg-indigo-700">تماس بگیر</a>
+          <a href="#portfolio" class="inline-flex items-center gap-2 border border-gray-200 px-5 py-3 rounded-md hover:bg-gray-50">مشاهده نمونه‌کارها</a>
+          <a id="downloadResume" href="#resume" class="inline-flex items-center gap-2 text-indigo-600 px-5 py-3 rounded-md hover:bg-indigo-50">دانلود رزومه (PDF)</a>
+        </div>
+
+        <div class="mt-8 grid sm:grid-cols-2 gap-4">
+          <div class="bg-white p-4 rounded-lg shadow-sm">
+            <h3 class="text-sm text-gray-500">تجربه</h3>
+            <p class="mt-1 font-semibold text-gray-900">۴+ سال در توسعه وب</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-sm">
+            <h3 class="text-sm text-gray-500">محصولات تحویلی</h3>
+            <p class="mt-1 font-semibold text-gray-900">وب‌سایت‌های واکنش‌گرا و اپ‌های تک‌صفحه‌ای</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center">
+        <div class="w-56 h-56 rounded-xl bg-gradient-to-br from-indigo-100 to-purple-50 shadow-lg p-4 flex items-center justify-center">
+          <!-- Simple avatar SVG -->
+          <svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" class="rounded-full">
+            <rect width="160" height="160" rx="20" fill="url(#g)"/>
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#6366F1"/>
+                <stop offset="1" stop-color="#A78BFA"/>
+              </linearGradient>
+            </defs>
+            <g transform="translate(28 22)" fill="#fff">
+              <circle cx="52" cy="36" r="22" opacity="0.98"/>
+              <path d="M12 108c0-23 23-38 60-38s60 15 60 38v8H12v-8z" opacity="0.96"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="mt-16">
+      <div class="bg-white rounded-lg shadow-sm p-6">
+        <h3 class="text-2xl font-bold">درباره من</h3>
+        <p class="mt-4 text-gray-600 leading-relaxed">
+          من محمد مهدی احمدی هستم؛ عاشق طراحی تجربه‌های دیجیتال معنی‌دار. در طول چند سال گذشته روی پروژه‌های گوناگون از وب‌سایت‌های شرکتی تا اپلیکیشن‌های تک‌صفحه‌ای کار کرده‌ام. تخصص من طراحی رابط‌کاربری (UI)، بهبود تجربه کاربری (UX)، و پیاده‌سازی فرانت‌اند با استانداردهای مدرن است.
+        </p>
+
+        <div class="mt-6 grid md:grid-cols-3 gap-4">
+          <div>
+            <h4 class="text-sm text-gray-500">مهارت‌های اصلی</h4>
+            <ul class="mt-2 space-y-2 text-gray-700">
+              <li>HTML5 & CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>Tailwind CSS</li>
+              <li>React & Vue</li>
+              <li>Node.js & Express</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-sm text-gray-500">ابزارها</h4>
+            <ul class="mt-2 space-y-2 text-gray-700">
+              <li>Figma</li>
+              <li>Git & GitHub</li>
+              <li>Vercel / Netlify</li>
+              <li>Chrome DevTools</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-sm text-gray-500">رویکرد</h4>
+            <p class="mt-2 text-gray-700">من ابتدا نیاز کاربر و اهداف کسب‌وکار را تحلیل کرده، سپس با نمونه‌سازی و تست‌های ساده، راه‌حل‌هایی قابل توسعه و مقیاس‌پذیر ایجاد می‌کنم.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="mt-10">
+      <h3 class="text-xl font-semibold">مهارت‌ها</h3>
+      <div class="mt-4 grid sm:grid-cols-2 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow-sm">
+          <div class="flex justify-between items-center">
+            <span class="text-gray-700 font-medium">HTML & CSS</span>
+            <span class="text-gray-500">95%</span>
+          </div>
+          <div class="mt-3 bg-gray-100 h-2 rounded-full overflow-hidden">
+            <div class="h-2 rounded-full bg-indigo-600" style="width:95%"></div>
+          </div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-sm">
+          <div class="flex justify-between items-center">
+            <span class="text-gray-700 font-medium">JavaScript</span>
+            <span class="text-gray-500">90%</span>
+          </div>
+          <div class="mt-3 bg-gray-100 h-2 rounded-full overflow-hidden">
+            <div class="h-2 rounded-full bg-indigo-600" style="width:90%"></div>
+          </div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-sm">
+          <div class="flex justify-between items-center">
+            <span class="text-gray-700 font-medium">Tailwind CSS</span>
+            <span class="text-gray-500">92%</span>
+          </div>
+          <div class="mt-3 bg-gray-100 h-2 rounded-full overflow-hidden">
+            <div class="h-2 rounded-full bg-indigo-600" style="width:92%"></div>
+          </div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-sm">
+          <div class="flex justify-between items-center">
+            <span class="text-gray-700 font-medium">React / Vue</span>
+            <span class="text-gray-500">88%</span>
+          </div>
+          <div class="mt-3 bg-gray-100 h-2 rounded-full overflow-hidden">
+            <div class="h-2 rounded-full bg-indigo-600" style="width:88%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="mt-12">
+      <h3 class="text-2xl font-bold">نمونه‌کارها</h3>
+      <p class="mt-2 text-gray-600">چند پروژه منتخب که طراحی و توسعه آن‌ها را انجام داده‌ام.</p>
+
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=5b1b15e0b4d5d5a14ef3f4b9f0b9d525" alt="Project 1" class="w-full h-44 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold">فروشگاه اینترنتی مدرن</h4>
+            <p class="mt-2 text-sm text-gray-600">طراحی رابط و پیاده‌سازی فرانت‌اند یک فروشگاه آنلاین با تجربه کاربری ساده و سرعت بارگذاری بالا.</p>
+            <div class="mt-3 flex items-center justify-between">
+              <span class="text-xs text-gray-500">React • Tailwind</span>
+              <a href="#" class="text-indigo-600 text-sm">مشاهده پروژه</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=6b2c2f4aa1a8d0a7f6b2f8a1b4b3c9c1" alt="Project 2" class="w-full h-44 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold">داشبورد مدیریتی</h4>
+            <p class="mt-2 text-sm text-gray-600">پیاده‌سازی داشبورد داده‌محور با نیازمندی‌های سفارشی و ویجت‌های قابل تنظیم.</p>
+            <div class="mt-3 flex items-center justify-between">
+              <span class="text-xs text-gray-500">Vue • Charts</span>
+              <a href="#" class="text-indigo-600 text-sm">مشاهده پروژه</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=9c4c3b7f4e8aee3c68d9aab6b0b9f44a" alt="Project 3" class="w-full h-44 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold">لندینگ‌پیج معرفی محصول</h4>
+            <p class="mt-2 text-sm text-gray-600">لندینگ‌پیج بهینه برای تبدیل بازدیدکننده به مشتری با طراحی واکنش‌گرا و CTA برجسته.</p>
+            <div class="mt-3 flex items-center justify-between">
+              <span class="text-xs text-gray-500">HTML • Tailwind</span>
+              <a href="#" class="text-indigo-600 text-sm">مشاهده پروژه</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="mt-12">
+      <h3 class="text-2xl font-bold">خدمات</h3>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h4 class="font-semibold">طراحی رابط کاربری (UI)</h4>
+          <p class="mt-2 text-sm text-gray-600">طراحی ظاهری پروژه با رعایت اصول دسترسی و هماهنگی برند.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h4 class="font-semibold">توسعه فرانت‌اند</h4>
+          <p class="mt-2 text-sm text-gray-600">پیاده‌سازی صفحات واکنش‌گرا، SPA و کامپوننت‌های قابل استفاده مجدد.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h4 class="font-semibold">بهینه‌سازی و نگهداری</h4>
+          <p class="mt-2 text-sm text-gray-600">افزایش سرعت، بهبود SEO اولیه و نگهداری کد در طول زمان.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-12">
+      <div class="bg-white rounded-lg shadow-sm p-6 grid md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="text-2xl font-bold">تماس با من</h3>
+          <p class="mt-2 text-gray-600">اگر پروژه‌ای دارید یا می‌خواهید همکاری کنیم، خوشحال می‌شم پیام شما را دریافت کنم.</p>
+
+          <ul class="mt-6 space-y-3 text-gray-700">
+            <li class="flex items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 01-8 0m8 0a4 4 0 00-8 0m8 0v1a4 4 0 01-4 4H8a4 4 0 01-4-4v-1"/>
+              </svg>
+              <span>تهران، ایران</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V8M3 8v9a2 2 0 002 2h1"/>
+              </svg>
+              <a href="mailto:mahdi.ahmadi@example.com" class="text-indigo-600">mahdi.ahmadi@example.com</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h2l.4 2M7 13l3-3m0 0l3 3m-3-3v6m6 2h2a2 2 0 002-2v-6a2 2 0 00-2-2h-1.6"/>
+              </svg>
+              <a href="tel:+989121234567" class="text-indigo-600">+98 912 123 4567</a>
+            </li>
+          </ul>
+
+          <div class="mt-6 flex items-center gap-3">
+            <a href="#" class="inline-flex items-center gap-2 px-3 py-2 bg-gray-100 rounded-md">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.41 2.87 8.15 6.84 9.48.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.66.35-1.08.64-1.33-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.28.1-2.66 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0112 6.8c.85.004 1.71.11 2.51.32 1.9-1.29 2.74-1.02 2.74-1.02.55 1.38.2 2.41.1 2.66.64.7 1.03 1.59 1.03 2.68 0 3.83-2.34 4.68-4.57 4.92.36.31.68.92.68 1.86 0 1.34-.01 2.42-.01 2.75 0 .27.18.59.69.48A9.97 9.97 0 0021.96 12c0-5.5-4.46-9.96-9.96-9.96z"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="inline-flex items-center gap-2 px-3 py-2 bg-indigo-600 text-white rounded-md">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.238-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.762-2.238-5-5-5zm-9 19h-3v-10h3v10zm-1.5-11.3c-.966 0-1.75-.79-1.75-1.75s.784-1.75 1.75-1.75 1.75.79 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.3h-3v-5.5c0-1.314-.026-3-1.826-3-1.828 0-2.106 1.428-2.106 2.9v5.6h-3v-10h2.879v1.36h.041c.401-.76 1.379-1.56 2.838-1.56 3.034 0 3.596 1.997 3.596 4.59v5.61z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <form class="bg-gray-50 p-4 rounded-lg" onsubmit="event.preventDefault(); alert('پیام شما ارسال شد (نمایشی).');">
+          <label class="block">
+            <span class="text-sm text-gray-700">نام</span>
+            <input required class="mt-1 block w-full rounded-md border-gray-200 shadow-sm focus:border-indigo-400 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="نام شما">
+          </label>
+          <label class="block mt-3">
+            <span class="text-sm text-gray-700">ایمیل</span>
+            <input type="email" required class="mt-1 block w-full rounded-md border-gray-200 shadow-sm focus:border-indigo-400 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="example@domain.com">
+          </label>
+          <label class="block mt-3">
+            <span class="text-sm text-gray-700">پیام</span>
+            <textarea required rows="4" class="mt-1 block w-full rounded-md border-gray-200 shadow-sm focus:border-indigo-400 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="متن پیام خود را اینجا بنویسید"></textarea>
+          </label>
+          <div class="mt-4 flex items-center justify-between">
+            <button type="submit" class="inline-flex items-center gap-2 bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">ارسال پیام</button>
+            <a href="mailto:mahdi.ahmadi@example.com" class="text-sm text-gray-500">یا ایمیل بفرستید</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Resume (Anchor target) -->
+    <section id="resume" class="mt-12">
+      <div class="bg-white rounded-lg shadow-sm p-6">
+        <h3 class="text-xl font-bold">رزومه</h3>
+        <p class="mt-3 text-gray-600">برای دریافت نسخه کامل رزومه روی لینک زیر کلیک کنید.</p>
+        <div class="mt-4">
+          <a href="#" onclick="alert('دانلود رزومه (نمایشی)');" class="inline-flex items-center gap-2 bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">دانلود رزومه (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between">
+      <p class="text-sm text-gray-600">© 2026 محمد مهدی احمدی — تمام حقوق محفوظ است.</p>
+      <div class="mt-3 md:mt-0 flex items-center gap-4">
+        <a href="#" class="text-gray-500 hover:text-indigo-600">قوانین</a>
+        <a href="#" class="text-gray-500 hover:text-indigo-600">حریم خصوصی</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn && menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Simple smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
