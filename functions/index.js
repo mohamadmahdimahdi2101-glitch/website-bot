@@ -13,7 +13,7 @@ export async function onRequest(context) {
         return new Response('فرمت لینک معتبر نیست.', { status: 400 });
       }
       
-      // فراخوانی مستقیم فایل از آدرس داخلی کلودفلر پیجز شما
+      // فراخوانی مستقیم فایل از آدرس گیت‌هاب پیجز
       const targetUrl = `https://mohamadmahdimahdi2101-glitch.github.io/website-bot/${chatId}/${projectId}/index.html`;
       
       const response = await fetch(targetUrl);
