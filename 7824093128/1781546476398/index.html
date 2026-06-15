@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>بازی سه‌بعدی محمد مهدی احمدی</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body, html { margin: 0; padding: 0; height: 100%; background: #0f172a; color: #f1f5f9; overflow-x: hidden; }
+    #gameCanvas { display: block; margin: 2rem auto; border-radius: 1rem; box-shadow: 0 0 20px #38bdf8; background: #1e293b; }
+    header { background: #2563eb; }
+    .btn-3d {
+      @apply bg-blue-600 text-white font-bold py-2 px-6 rounded-lg shadow-md shadow-blue-700 hover:bg-blue-700 transition duration-300;
+      user-select: none;
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+<header class="p-6 text-center">
+  <h1 class="text-3xl font-extrabold tracking-tight">بازی سه‌بعدی محمد مهدی احمدی</h1>
+  <p class="mt-2 text-blue-200">در این بازی سه‌بعدی تعاملی محیطی جذاب را تجربه کنید.</p>
+</header>
+
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+  <canvas id="gameCanvas" width="800" height="600" class="w-full max-w-4xl rounded-lg shadow-lg"></canvas>
+
+  <button id="startBtn" class="btn-3d mt-8">شروع بازی</button>
+</main>
+
+<footer class="bg-slate-900 text-center p-4 mt-12 text-sm text-slate-400">
+  ساخته شده برای محمد مهدی احمدی - طراحی و توسعه وب
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+<script>
+  // سه‌بعدی ساده: می‌چرخاندن مکعب با تصویر روی هر وجه از Unsplash
+
+  const urls = [
+    'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80', // طبیعت
+    'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80', // کوه
+    'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80', // جنگل
+    'https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80', // دریا
+    'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=800&q=80', // آسمان
+    'https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=800&q=80', // شهر شب
+  ];
+
+  const canvas = document.getElementById('gameCanvas');
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(75, canvas.width / canvas.height, 0.1, 1000);
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
+  renderer.setSize(canvas.width, canvas.height);
+  renderer.setClearColor(new THREE.Color(0x0f172a), 1);
+
+  // نورپردازی
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+  scene.add(ambientLight);
+  const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+  directionalLight.position.set(5, 10, 7);
+  scene.add(directionalLight);
+
+  // بارگذاری بافت ها
+  const loader = new THREE.TextureLoader();
+  const materials = urls.map(url => {
+    const texture = loader.load(url);
+    return new THREE.MeshStandardMaterial({ map: texture });
+  });
+
+  // هندسه مکعب
+  const geometry = new THREE.BoxGeometry(3, 3, 3);
+  const cube = new THREE.Mesh(geometry, materials);
+  scene.add(cube);
+
+  camera.position.z = 7;
+
+  let animationId = null;
+  function animate() {
+    animationId = requestAnimationFrame(animate);
+    cube.rotation.x += 0.01;
+    cube.rotation.y += 0.01;
+    renderer.render(scene, camera);
+  }
+
+  document.getElementById('startBtn').addEventListener('click', () => {
+    if(animationId === null){
+      animate();
+      document.getElementById('startBtn').textContent = 'متوقف کردن بازی';
+    } else {
+      cancelAnimationFrame(animationId);
+      animationId = null;
+      renderer.render(scene, camera);
+      document.getElementById('startBtn').textContent = 'شروع بازی';
+    }
+  });
+
+  // Initial render
+  renderer.render(scene, camera);
+</script>
+
+</body>
+</html>
