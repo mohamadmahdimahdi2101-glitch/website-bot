@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>برای مامانم — خوبی مامانم</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind = window.tailwind || {};
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            vazir: ['Vazirmatn', 'sans-serif']
+          },
+          colors: {
+            roseSoft: '#ff6b81',
+            momBg: '#fff7f9'
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body { font-family: "Vazirmatn", sans-serif; }
+    /* Floating hearts animation */
+    .heart {
+      position: fixed;
+      width: 36px;
+      height: 36px;
+      pointer-events: none;
+      transform: translateY(0);
+      animation: floatUp 2.8s ease-out forwards;
+      z-index: 50;
+      filter: drop-shadow(0 6px 10px rgba(0,0,0,0.08));
+    }
+    .heart svg { width: 100%; height: 100%; }
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(0.9); opacity: 0.95; }
+      30% { transform: translateY(-40px) scale(1.05); opacity: 1; }
+      100% { transform: translateY(-260px) scale(0.8); opacity: 0; }
+    }
+
+    /* simple pulse for hero heart */
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.12); }
+    }
+    .beat { animation: beat 1s infinite; transform-origin: center; }
+
+    /* smooth modal */
+    .modal-backdrop { backdrop-filter: blur(6px); background: rgba(15,23,42,0.45); }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-momBg to-white min-h-screen flex items-center justify-center p-6">
+  <div class="max-w-4xl w-full bg-white rounded-2xl shadow-xl overflow-hidden ring-1 ring-gray-100">
+    <header class="flex items-center justify-between px-6 py-4 border-b border-gray-100">
+      <div class="flex items-center gap-3">
+        <div class="bg-rose-100 text-rose-600 rounded-full w-11 h-11 flex items-center justify-center text-xl font-bold">م</div>
+        <div>
+          <h1 class="text-slate-800 text-lg font-bold">برای مامانم</h1>
+          <p class="text-slate-500 text-sm">جایی برای گفتنِ تمامِ خوبی‌ها</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <button id="giftBtn" class="px-4 py-2 bg-roseSoft text-white rounded-lg shadow-sm hover:brightness-95 transition">هدیهٔ مجازی</button>
+        <button id="msgBtn" class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg hover:bg-slate-200 transition">ارسال پیام</button>
+      </div>
+    </header>
+
+    <main class="p-8">
+      <section class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <div class="flex items-center gap-4">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-rose-600 leading-tight">خوبی مامانم</h2>
+            <div class="w-14 h-14 flex items-center justify-center">
+              <svg class="beat" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 21s-7-4.438-9-7.5C-1.5 9.75 4 3 8 6.5 10.5 9 12 11 12 11s1.5-2 4-4.5C20 3 25.5 9.75 21 13.5c-2 3.062-9 7.5-9 7.5z" fill="#ff6b81"/>
+              </svg>
+            </div>
+          </div>
+          <p class="mt-4 text-slate-600 text-lg">مامان یعنی آرامش، یعنی مهربونی، یعنی دستی که همیشه کمک می‌کنه. اینجا یه صفحه‌ست برای یادآوریِ خوبی‌ها و گفتنِ دوستت دارم به بهترینِ دنیاست.</p>
+
+          <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="p-4 bg-rose-50 rounded-lg">
+              <h3 class="text-sm font-semibold text-rose-700">همیشه پشتیبان</h3>
+              <p class="text-slate-600 text-sm mt-1">هر وقت زمین خوردم، تو بلندم کردی.</p>
+            </div>
+            <div class="p-4 bg-rose-50 rounded-lg">
+              <h3 class="text-sm font-semibold text-rose-700">آغوشِ گرم</h3>
+              <p class="text-slate-600 text-sm mt-1">آغوشی که همه‌چیز رو بهتر می‌کنه.</p>
+            </div>
+            <div class="p-4 bg-rose-50 rounded-lg">
+              <h3 class="text-sm font-semibold text-rose-700">نصیحت‌های طلایی</h3>
+              <p class="text-slate-600 text-sm mt-1">همیشه درست می‌گه، حتی وقتی من فکر نمی‌کنم.</p>
+            </div>
+            <div class="p-4 bg-rose-50 rounded-lg">
+              <h3 class="text-sm font-semibold text-rose-700">فداکاری</h3>
+              <p class="text-slate-600 text-sm mt-1">اول خودت، بعد همه چیز؛ بدون اینکه منت بذاری.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="w-full sm:w-80 h-52 bg-gradient-to-br from-rose-50 to-white rounded-xl shadow-inner flex items-center justify-center relative overflow-hidden">
+            <div class="text-center px-6">
+              <div class="text-3xl font-semibold text-rose-600">مامان جون</div>
+              <p class="mt-2 text-slate-500">تو که هستی، دنیا جای بهتریه.</p>
+            </div>
+            <div class="absolute -bottom-6 -left-10 opacity-20">
+              <svg width="160" height="160" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.438-9-7.5C-1.5 9.75 4 3 8 6.5 10.5 9 12 11 12 11s1.5-2 4-4.5C20 3 25.5 9.75 21 13.5c-2 3.062-9 7.5-9 7.5z" fill="#ff6b81"/></svg>
+            </div>
+          </div>
+
+          <div class="mt-6 w-full sm:w-80 space-y-3">
+            <div class="flex items-center gap-3 p-3 bg-white rounded-lg border">
+              <div class="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 font-bold">❤</div>
+              <div>
+                <div class="text-sm font-medium text-slate-700">نمرهٔ امروز مامان</div>
+                <div class="text-xs text-slate-500">100 از 100 — بی‌نقص</div>
+              </div>
+            </div>
+
+            <div class="p-3 bg-white rounded-lg border text-sm text-slate-600">
+              هر وقت خواستی برای مامانت یه پیام بفرستی یا یه یادآوری بذاری که چقدر دوستش داری، اینجا هستی.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-10">
+        <h3 class="text-md font-bold text-slate-700">چند جمله که همیشه به مامانم میگم</h3>
+        <ul class="mt-4 grid sm:grid-cols-2 gap-3">
+          <li class="p-3 bg-rose-50 rounded-lg">ممنون که همیشه کنارمی.</li>
+          <li class="p-3 bg-rose-50 rounded-lg">عزیزمی و بی‌نهایت دوست‌داشتنی.</li>
+          <li class="p-3 bg-rose-50 rounded-lg">بدون تو هیچ‌کدوم این‌ها ممکن نبود.</li>
+          <li class="p-3 bg-rose-50 rounded-lg">بهت افتخار می‌کنم، مامان.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="px-6 py-4 border-t border-gray-100 text-sm text-slate-500 flex items-center justify-between">
+      <div>یک صفحهٔ ساده برای یادآوریِ خوبی‌ها</div>
+      <div class="flex items-center gap-3">
+        <span>Made with</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.438-9-7.5C-1.5 9.75 4 3 8 6.5 10.5 9 12 11 12 11s1.5-2 4-4.5C20 3 25.5 9.75 21 13.5c-2 3.062-9 7.5-9 7.5z" fill="#ff6b81"/></svg>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 hidden items-center justify-center z-40">
+    <div class="modal-backdrop absolute inset-0"></div>
+    <div class="relative bg-white rounded-xl shadow-2xl w-full max-w-lg mx-4 overflow-hidden">
+      <div class="p-6">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-bold text-slate-800">پیام برای مامان</h3>
+          <button id="closeModal" class="text-slate-400 hover:text-slate-600">بستن ✕</button>
+        </div>
+        <p class="mt-2 text-sm text-slate-600">اینجا می‌تونی یه پیام صمیمی بنویسی تا وقتی خواستی نشونش بدی یا به عنوان یادداشت نگه داری.</p>
+
+        <label class="block mt-4 text-sm text-slate-700">نام (اختیاری)</label>
+        <input id="nameInput" class="mt-1 w-full rounded-md border px-3 py-2 text-sm" placeholder="مثلاً: دخترت" />
+
+        <label class="block mt-3 text-sm text-slate-700">پیام</label>
+        <textarea id="msgInput" rows="4" class="mt-1 w-full rounded-md border px-3 py-2 text-sm" placeholder="مامان، تو بهترین هستی..."></textarea>
+
+        <div class="mt-4 flex items-center justify-between">
+          <div class="text-sm text-slate-500">می‌تونی پیام رو ذخیره یا بفرستی.</div>
+          <div class="flex items-center gap-2">
+            <button id="saveBtn" class="px-4 py-2 bg-slate-100 rounded-md hover:bg-slate-200">ذخیره</button>
+            <button id="sendBtn" class="px-4 py-2 bg-roseSoft text-white rounded-md">فوروارد به مامان</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-slate-800 text-white px-4 py-2 rounded-md shadow-md hidden z-50"></div>
+
+  <script>
+    // Elements
+    const giftBtn = document.getElementById('giftBtn');
+    const msgBtn = document.getElementById('msgBtn');
+    const modal = document.getElementById('modal');
+    const closeModal = document.getElementById('closeModal');
+    const saveBtn = document.getElementById('saveBtn');
+    const sendBtn = document.getElementById('sendBtn');
+    const toast = document.getElementById('toast');
+    const nameInput = document.getElementById('nameInput');
+    const msgInput = document.getElementById('msgInput');
+
+    // Floating heart generator
+    function spawnHeart(x, y) {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.left = (x - 18) + 'px';
+      heart.style.top = (y - 18) + 'px';
+      const color = ['#ff6b81','#ff8fab','#ff9fb3','#ff87a9'][Math.floor(Math.random()*4)];
+      heart.innerHTML = `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="${color}" d="M12 21s-7-4.438-9-7.5C-1.5 9.75 4 3 8 6.5 10.5 9 12 11 12 11s1.5-2 4-4.5C20 3 25.5 9.75 21 13.5c-2 3.062-9 7.5-9 7.5z"/></svg>`;
+      document.body.appendChild(heart);
+      setTimeout(()=> heart.remove(), 3000);
+    }
+
+    // Burst of hearts
+    function burstHearts(centerX, centerY, count = 16) {
+      for (let i = 0; i < count; i++) {
+        setTimeout(() => {
+          const offsetX = (Math.random() - 0.5) * 160;
+          const offsetY = (Math.random() - 0.5) * 40;
+          spawnHeart(centerX + offsetX, centerY + offsetY);
+        }, i * 40);
+      }
+    }
+
+    giftBtn.addEventListener('click', (e) => {
+      const rect = e.target.getBoundingClientRect();
+      const cx = rect.left + rect.width/2;
+      const cy = rect.top + rect.height/2;
+      burstHearts(cx, cy, 20);
+      showToast('هدیهٔ مجازی فرستاده شد! ❤');
+    });
+
+    // Also allow clicking anywhere on hero to spawn single hearts
+    document.querySelectorAll('main, header').forEach(el => {
+      el.addEventListener('click', (e) => {
+        // avoid triggering when clicking buttons
+        if (e.target.closest('button')) return;
+        spawnHeart(e.clientX, e.clientY);
+      });
+    });
+
+    // Modal handlers
+    msgBtn.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      nameInput.focus();
+    });
+    closeModal.addEventListener('click', () => {
+      closeTheModal();
+    });
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeTheModal();
+    });
+
+    function closeTheModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function showToast(text, ms = 2600) {
+      toast.textContent = text;
+      toast.classList.remove('hidden');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, ms);
+    }
+
+    saveBtn.addEventListener('click', () => {
+      const name = nameInput.value.trim() || 'دوست‌داشتنیِ من';
+      const msg = msgInput.value.trim();
+      if (!msg) {
+        showToast('پیام خالیه، یه چیزی بنویس :)');
+        return;
+      }
+      // save to localStorage
+      const saved = JSON.parse(localStorage.getItem('mom_messages') || '[]');
+      saved.push({ name, msg, time: new Date().toISOString() });
+      localStorage.setItem('mom_messages', JSON.stringify(saved));
+      showToast('پیام ذخیره شد 💾');
+      nameInput.value = '';
+      msgInput.value = '';
+      closeTheModal();
+      // soft burst
+      burstHearts(window.innerWidth/2, window.innerHeight/2, 12);
+    });
+
+    sendBtn.addEventListener('click', () => {
+      const name = nameInput.value.trim() || 'دوست‌داشتنیِ من';
+      const msg = msgInput.value.trim();
+      if (!msg) {
+        showToast('پیام خالیه، یه چیزی بنویس :)');
+        return;
+      }
+      // simulate "sending"
+      showToast('پیامت آمادهٔ فرستادن شد ✨');
+      // large burst
+      burstHearts(window.innerWidth/2, window.innerHeight/2, 28);
+      nameInput.value = '';
+      msgInput.value = '';
+      closeTheModal();
+    });
+
+    // Small startup animation: a few hearts float up
+    setTimeout(()=> {
+      const cx = window.innerWidth * 0.75;
+      const cy = window.innerHeight * 0.6;
+      burstHearts(cx, cy, 10);
+    }, 800);
+
+    // Keyboard shortcut: press H to send hearts
+    document.addEventListener('keydown', (e) => {
+      if (e.key.toLowerCase() === 'h') {
+        burstHearts(window.innerWidth/2, window.innerHeight/2, 18);
+        showToast('هِلُپ! ❤ (هدیه فرستاده شد)');
+      }
+      if (e.key === 'Escape') closeTheModal();
+    });
+  </script>
+</body>
+</html>
