@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>پوستر روز مادر</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  @keyframes pulseHeart {
+    0%, 100% { transform: scale(1); fill: #f87171; }
+    50% { transform: scale(1.3); fill: #ef4444; }
+  }
+  .heart-icon {
+    animation: pulseHeart 1.5s infinite;
+    transform-origin: center;
+  }
+  @keyframes floatUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    50% { opacity: 1; transform: translateY(-10px); }
+    100% { opacity: 0; transform: translateY(-40px); }
+  }
+  .floating-heart {
+    position: absolute;
+    animation: floatUp 4s ease-in-out infinite;
+    fill: #f87171;
+    opacity: 0;
+  }
+</style>
+</head>
+<body class="bg-gradient-to-tr from-pink-200 via-pink-100 to-pink-300 min-h-screen flex flex-col items-center justify-center px-6 py-12 relative overflow-hidden font-vazir">
+
+<!-- Floating hearts scattered -->
+<svg class="floating-heart top-20 left-10 w-6 h-6" style="animation-delay: 0s;" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3a5.503 5.503 0 014.5 2.09A5.503 5.503 0 0116.5 3c3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+<svg class="floating-heart top-40 right-12 w-5 h-5" style="animation-delay: 1.5s;" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3a5.503 5.503 0 014.5 2.09A5.503 5.503 0 0116.5 3c3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+<svg class="floating-heart bottom-20 left-1/3 w-4 h-4" style="animation-delay: 3s;" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3a5.503 5.503 0 014.5 2.09A5.503 5.503 0 0116.5 3c3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+
+<div class="max-w-xl bg-white bg-opacity-90 rounded-3xl shadow-xl p-10 flex flex-col items-center relative z-10">
+  <h1 class="text-5xl font-extrabold text-pink-600 mb-4 select-none">روز مادر مبارک!</h1>
+  <svg class="heart-icon w-20 h-20 mb-6" viewBox="0 0 24 24">
+    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3a5.503 5.503 0 014.5 2.09A5.503 5.503 0 0116.5 3c3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#f87171"/>
+  </svg>
+  <p class="text-xl text-pink-700 mb-6 leading-relaxed text-center px-4">
+    مامان عزیزم،
+    <br />
+    از روزهای سرد و گرم زندگی که با مهربانی و صبر تو گرم و زیبا شدند ممنونم.
+    <br />
+    تو بهترین دوست، همراه و بزرگ‌ترین نعمت زندگی من هستی.<br />
+    امروز و هر روز دوستت دارم و بابت همه‌چیز از ته قلبم سپاسگزارم.
+  </p>
+  <button id="btn-thank" class="bg-pink-500 hover:bg-pink-600 transition-all duration-300 rounded-full px-8 py-3 text-white font-semibold shadow-md select-none">
+    از مادر عزیزم تشکر کن
+  </button>
+
+  <div id="thank-animation" class="mt-6 text-pink-700 font-serif text-lg hidden select-none">
+    <p>مادرم، دوستت دارم ♥</p>
+  </div>
+</div>
+
+<script>
+  const btn = document.getElementById('btn-thank');
+  const thankAnim = document.getElementById('thank-animation');
+  btn.addEventListener('click', () => {
+    thankAnim.classList.remove('hidden');
+    thankAnim.classList.add('animate-fadeIn');
+    setTimeout(() => {
+      thankAnim.classList.add('hidden');
+      thankAnim.classList.remove('animate-fadeIn');
+    }, 4000);
+  });
+</script>
+<style>
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+  .animate-fadeIn {
+    animation: fadeIn 1s forwards;
+  }
+  /* Persian font Vazir from CDN */
+  @font-face {
+    font-family: 'vazir';
+    src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@latest/fonts/webfonts/Vazir.woff2') format('woff2');
+    font-weight: 400; font-style: normal;
+  }
+  .font-vazir {
+    font-family: 'vazir', sans-serif;
+  }
+</style>
+
+</body>
+</html>
