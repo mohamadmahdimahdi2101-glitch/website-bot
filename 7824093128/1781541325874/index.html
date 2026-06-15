@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه لباس Coconut</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .transition {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .transition:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-cream font-sans">
+    <header class="bg-white shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center p-5">
+            <h1 class="text-3xl font-bold text-gray-800">Coconut</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#shop" class="text-gray-600 hover:text-gray-900">فروشگاه</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-gray-900">درباره ما</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-gray-900">تماس با ما</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero bg-cream py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-5xl font-extrabold text-gray-800">فروشگاه لباس های شیک</h2>
+            <p class="mt-4 text-gray-600">لباس هایی که شما را متمایز می کند!</p>
+            <a href="#shop" class="mt-8 inline-block bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-600 transition">خرید کنید</a>
+        </div>
+    </section>
+
+    <section id="shop" class="container mx-auto py-20 text-center">
+        <h3 class="text-4xl font-bold text-gray-800">محصولات ما</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+            <div class="bg-white p-5 rounded-lg shadow transition">
+                <img src="https://via.placeholder.com/300" alt="محصول ۱" class="rounded-lg">
+                <h4 class="text-xl font-semibold mt-2">لباس ۱</h4>
+                <p class="text-gray-600">قیمت: ۵۰۰۰۰ تومان</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition">افزودن به سبد خرید</a>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow transition">
+                <img src="https://via.placeholder.com/300" alt="محصول ۲" class="rounded-lg">
+                <h4 class="text-xl font-semibold mt-2">لباس ۲</h4>
+                <p class="text-gray-600">قیمت: ۷۰۰۰۰ تومان</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition">افزودن به سبد خرید</a>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow transition">
+                <img src="https://via.placeholder.com/300" alt="محصول ۳" class="rounded-lg">
+                <h4 class="text-xl font-semibold mt-2">لباس ۳</h4>
+                <p class="text-gray-600">قیمت: ۶۰۰۰۰ تومان</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition">افزودن به سبد خرید</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-gray-100 py-20">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold text-gray-800">درباره ما</h3>
+            <p class="mt-4 text-gray-600">ما در Coconut به دنبال ارائه بهترین لباس ها برای شما هستیم. با ما باشید!</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container mx-auto py-20 text-center">
+        <h3 class="text-4xl font-bold text-gray-800">تماس با ما</h3>
+        <p class="mt-4 text-gray-600">برای سوالات و مشاوره، به ما ایمیل بزنید:</p>
+        <a href="mailto:info@coconut.com" class="mt-4 text-blue-500">info@coconut.com</a>
+    </section>
+
+    <footer class="bg-white py-5 text-center">
+        <p class="text-gray-600">&copy; 2023 Coconut. تمامی حقوق محفوظ است.</p>
+    </footer>
+</body>
+</html>
