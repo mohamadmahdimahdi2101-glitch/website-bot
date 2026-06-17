@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>وبسایت نمونه</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+<header class="bg-green-600 text-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">وبسایت سبز</h1>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-green-300 transition">خانه</a></li>
+                <li><a href="#services" class="hover:text-green-300 transition">خدمات</a></li>
+                <li><a href="#gallery" class="hover:text-green-300 transition">گالری</a></li>
+                <li><a href="#contact" class="hover:text-green-300 transition">تماس با ما</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="home" class="relative bg-green-800 text-white">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80" alt="طبیعت سبز" class="absolute inset-0 w-full h-full object-cover opacity-50" />
+    <div class="container mx-auto px-6 py-24 relative z-10 text-center">
+        <h2 class="text-4xl md:text-6xl font-extrabold mb-6">خوش آمدید به دنیای سبز</h2>
+        <p class="text-lg md:text-2xl max-w-2xl mx-auto mb-8">ما همراه شما در حفاظت از طبیعت و ارائه خدمات محیط زیستی هستیم.</p>
+        <a href="#services" class="inline-block bg-white text-green-800 font-semibold px-6 py-3 rounded shadow hover:bg-green-100 transition">خدمات ما را ببینید</a>
+    </div>
+</section>
+
+<section id="services" class="container mx-auto px-6 py-20">
+    <h3 class="text-3xl font-bold text-center mb-12">خدمات ما</h3>
+    <div class="grid md:grid-cols-3 gap-12">
+        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 text-center">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="کاشت درخت" class="mx-auto mb-6 rounded-lg object-cover h-48 w-full" />
+            <h4 class="text-xl font-semibold mb-4 text-green-700">کاشت درخت</h4>
+            <p>ما با کاشت درختان بومی به حفظ اکوسیستم کمک می‌کنیم و هوای پاکتری ایجاد می‌نماییم.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 text-center">
+            <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=400&q=80" alt="تصفیه آب" class="mx-auto mb-6 rounded-lg object-cover h-48 w-full" />
+            <h4 class="text-xl font-semibold mb-4 text-green-700">تصفیه آب</h4>
+            <p>پیاده‌سازی تکنولوژی‌های پیشرفته برای بهبود کیفیت آب و حفظ منابع آبی منطقه.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 text-center">
+            <img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=400&q=80" alt="انرژی خورشیدی" class="mx-auto mb-6 rounded-lg object-cover h-48 w-full" />
+            <h4 class="text-xl font-semibold mb-4 text-green-700">انرژی خورشیدی</h4>
+            <p>توسعه پروژه‌های انرژی پاک خورشیدی برای کاهش وابستگی به سوخت‌های فسیلی.</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="bg-green-50 py-20">
+    <div class="container mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center mb-12 text-green-800">گالری تصاویر</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="جنگل انبوه" class="rounded-lg shadow hover:scale-105 transition-transform cursor-pointer" />
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=400&q=80" alt="رودخانه پاک" class="rounded-lg shadow hover:scale-105 transition-transform cursor-pointer" />
+            <img src="https://images.unsplash.com/photo-1464467026445-97ca2c9083c0?auto=format&fit=crop&w=400&q=80" alt="صفحه خورشیدی" class="rounded-lg shadow hover:scale-105 transition-transform cursor-pointer" />
+            <img src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?auto=format&fit=crop&w=400&q=80" alt="کاشت نهال" class="rounded-lg shadow hover:scale-105 transition-transform cursor-pointer" />
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container mx-auto px-6 py-20">
+    <h3 class="text-3xl font-bold text-center mb-10">تماس با ما</h3>
+    <form class="max-w-xl mx-auto bg-white rounded-lg shadow p-8" action="#" method="POST">
+        <label for="name" class="block text-gray-700 mb-2 font-semibold">نام و نام خانوادگی</label>
+        <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded px-4 py-2 mb-6 focus:outline-none focus:border-green-500" placeholder="نام خود را وارد کنید" />
+
+        <label for="email" class="block text-gray-700 mb-2 font-semibold">ایمیل</label>
+        <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-4 py-2 mb-6 focus:outline-none focus:border-green-500" placeholder="ایمیل خود را وارد کنید" />
+
+        <label for="message" class="block text-gray-700 mb-2 font-semibold">پیام شما</label>
+        <textarea id="message" name="message" rows="5" required class="w-full border border-gray-300 rounded px-4 py-2 mb-6 focus:outline-none focus:border-green-500" placeholder="پیام خود را بنویسید"></textarea>
+
+        <button type="submit" class="w-full bg-green-600 text-white font-semibold py-3 rounded hover:bg-green-700 transition">ارسال پیام</button>
+    </form>
+</section>
+
+<footer class="bg-green-800 text-green-200 py-6 mt-20">
+    <div class="container mx-auto px-6 text-center text-sm">
+        © ۱۴۰۳ وبسایت سبز. تمامی حقوق محفوظ است.
+    </div>
+</footer>
+
+</body>
+</html>
