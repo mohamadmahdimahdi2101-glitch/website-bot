@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>فروشگاه قفس و لوازم پرنده</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body {
+    font-family: 'Vazirmatn', Tahoma, sans-serif;
+    background-color: #f0fdf4;
+  }
+</style>
+</head>
+<body class="bg-gradient-to-b from-green-50 via-green-100 to-green-50 min-h-screen flex flex-col">
+
+<header class="bg-green-700 text-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="#" class="text-2xl font-extrabold select-none">قفس پرنده</a>
+    <nav class="space-x-8 hidden md:flex">
+      <a href="#" class="hover:text-green-200 transition">خانه</a>
+      <a href="#" class="hover:text-green-200 transition">محصولات</a>
+      <a href="#" class="hover:text-green-200 transition">درباره ما</a>
+      <a href="#" class="hover:text-green-200 transition">تماس با ما</a>
+    </nav>
+    <button aria-label="نمایش سبد خرید" class="relative">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-green-200 hover:text-white transition" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.341 2.041M7 13h10l4-8H5.341M7 13l-1.447 2.895A1 1 0 007 17h10a1 1 0 001-.832L19 13M7 13L5.341 5.041M9 21h.01M15 21h.01" />
+      </svg>
+      <span class="absolute top-0 -left-1 bg-red-600 rounded-full text-xs w-5 h-5 flex items-center justify-center font-bold text-white animate-pulse">۳</span>
+    </button>
+  </div>
+</header>
+
+<section class="relative bg-green-200">
+  <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=1470&q=80" alt="قفس پرنده زیبا" class="w-full h-[420px] md:h-[500px] object-cover brightness-75">
+  <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-6">
+    <h1 class="text-white text-4xl md:text-6xl font-extrabold drop-shadow-lg leading-tight">قفس‌های مقاوم و زیبا برای پرنده‌تان</h1>
+    <p class="mt-4 max-w-xl text-green-100 text-lg md:text-xl drop-shadow-md">بهترین و باکیفیت‌ترین قفس‌ها همراه با لوازم جانبی متنوع و ارسال سریع</p>
+    <a href="#products" class="mt-8 inline-block px-8 py-3 bg-green-700 hover:bg-green-800 transition rounded-full text-white font-semibold shadow-lg drop-shadow-lg">مشاهده محصولات</a>
+  </div>
+</section>
+
+<main class="container mx-auto px-6 py-16 flex-grow">
+
+  <section>
+    <h2 class="text-center text-3xl font-extrabold text-green-800 mb-8">محصولات پرفروش</h2>
+    <div id="products" class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition cursor-pointer flex flex-col">
+        <img src="https://images.unsplash.com/photo-1590080877782-0d0d3fe1e0a8?auto=format&fit=crop&w=800&q=80" alt="قفس پرنده مدل کلاسیک" class="w-full h-56 object-cover">
+        <div class="p-5 flex flex-col flex-grow">
+          <h3 class="text-xl font-bold text-green-900 mb-2">قفس مدل کلاسیک</h3>
+          <p class="text-green-700 font-semibold text-lg mb-4">۱,۲۰۰,۰۰۰ تومان</p>
+          <button class="mt-auto bg-green-600 text-white py-2 rounded-full hover:bg-green-700 transition font-semibold">خرید</button>
+        </div>
+      </article>
+      <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition cursor-pointer flex flex-col">
+        <img src="https://images.unsplash.com/photo-1565120130283-3ed64ad4f23e?auto=format&fit=crop&w=800&q=80" alt="قفس پرنده مدل مدرن" class="w-full h-56 object-cover">
+        <div class="p-5 flex flex-col flex-grow">
+          <h3 class="text-xl font-bold text-green-900 mb-2">قفس مدل مدرن</h3>
+          <p class="text-green-700 font-semibold text-lg mb-4">۱,۵۰۰,۰۰۰ تومان</p>
+          <button class="mt-auto bg-green-600 text-white py-2 rounded-full hover:bg-green-700 transition font-semibold">خرید</button>
+        </div>
+      </article>
+      <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition cursor-pointer flex flex-col">
+        <img src="https://images.unsplash.com/photo-1547496502-e74027b9de49?auto=format&fit=crop&w=800&q=80" alt="قفس پرنده با طراحی خاص" class="w-full h-56 object-cover">
+        <div class="p-5 flex flex-col flex-grow">
+          <h3 class="text-xl font-bold text-green-900 mb-2">قفس طراحی خاص</h3>
+          <p class="text-green-700 font-semibold text-lg mb-4">۱,۸۰۰,۰۰۰ تومان</p>
+          <button class="mt-auto bg-green-600 text-white py-2 rounded-full hover:bg-green-700 transition font-semibold">خرید</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="mt-24 px-6 md:px-0 max-w-5xl mx-auto">
+    <h2 class="text-center text-3xl font-extrabold text-green-800 mb-12">چرا ما؟</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+      <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-green-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+        <h3 class="font-semibold text-xl mb-2 text-green-800">کیفیت تضمینی</h3>
+        <p class="text-green-700">تنها از بهترین مواد اولیه و طراحی‌های استاندارد استفاده می‌کنیم تا قفس‌ها مقاوم و زیبا باشند.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-green-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-6a2 2 0 114 0v6m5 4H6a2 2 0 01-2-2v-5a2 2 0 012-2h12a2 2 0 012 2v5a2 2 0 01-2 2z" />
+        </svg>
+        <h3 class="font-semibold text-xl mb-2 text-green-800">ارسال سریع</h3>
+        <p class="text-green-700">سفارش شما سریع بسته‌بندی و با مطمئن‌ترین روش‌ها به دستتان خواهد رسید.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-green-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16h6m-5 4h4a2 2 0 002-2v-6a2 2 0 00-2-2H8a2 2 0 00-2 2v6a2 2 0 002 2z" />
+        </svg>
+        <h3 class="font-semibold text-xl mb-2 text-green-800">پشتیبانی ۲۴ ساعته</h3>
+        <p class="text-green-700">همیشه پاسخگو هستیم تا شما بهترین تجربه خرید را داشته باشید.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-24 max-w-4xl mx-auto px-6">
+    <h2 class="text-center text-3xl font-extrabold text-green-800 mb-12">نظرات مشتریان</h2>
+    <div class="space-y-10">
+      <div class="bg-white rounded-xl shadow-lg p-6 flex items-center gap-6">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=80&q=80" alt="مشتری ۱" class="w-16 h-16 rounded-full object-cover border-2 border-green-600">
+        <div>
+          <p class="text-green-700 italic">«قفس‌ها دقیقاً همان چیزی بودند که می‌خواستم، کیفیت عالی و ارسال خیلی سریع بود. واقعا راضی‌ام.»</p>
+          <p class="mt-3 font-semibold text-green-900">مرضیه، تهران</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 flex items-center gap-6 flex-row-reverse">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&q=80" alt="مشتری ۲" class="w-16 h-16 rounded-full object-cover border-2 border-green-600">
+        <div class="text-right">
+          <p class="text-green-700 italic">«پشتیبانی خیلی خوب بود و به سوالاتم سریع جواب دادن. قفس‌ها هم بسیار زیبا و مقاوم.</p>
+          <p class="mt-3 font-semibold text-green-900">رضا، مشهد</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 flex items-center gap-6">
+        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=80&q=80" alt="مشتری ۳" class="w-16 h-16 rounded-full object-cover border-2 border-green-600">
+        <div>
+          <p class="text-green-700 italic">«پس از تحقیق زیاد، این سایت بهترین گزینه برای خرید قفس و لوازم جانبی پرنده بود. ممنونم از تیم حرفه‌ای.»</p>
+          <p class="mt-3 font-semibold text-green-900">سارا، اصفهان</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="bg-green-700 text-green-100 mt-16">
+  <div class="container mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+    <div>
+      <h3 class="font-bold mb-4 text-lg">تماس با ما</h3>
+      <p>تهران، خیابان آزادی، پلاک ۱۲۳</p>
+      <p>تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</p>
+      <p>ایمیل: info@birdcage.ir</p>
+    </div>
+    <div>
+      <h3 class="font-bold mb-4 text-lg">دسترسی سریع</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-green-300 transition">خانه</a></li>
+        <li><a href="#" class="hover:text-green-300 transition">محصولات</a></li>
+        <li><a href="#" class="hover:text-green-300 transition">درباره ما</a></li>
+        <li><a href="#" class="hover:text-green-300 transition">تماس با ما</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-bold mb-4 text-lg">شبکه‌های اجتماعی</h3>
+      <div class="flex gap-5 text-2xl">
+        <a href="#" aria-label="اینستاگرام" class="hover:text-green-300 transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2c-3.444 0-4.625.015-6.236.091A4.939 4.939 0 001.09 3.091 4.937 4.937 0 00.091 4.892C.015 6.503 0 7.684 0 11.125S.015 15.747.091 17.36a4.938 4.938 0 00.999 1.8 4.933 4.933 0 001.664 1.664 4.9 4.9 0 001.8 1.001c1.612.077 2.793.092 6.236.092 3.444 0 4.625-.015 6.236-.092a4.902 4.902 0 001.8-1.001 4.938 4.938 0 001.664-1.664 4.937 4.937 0 001.001-1.8c.076-1.613.092-2.794.092-6.237 0-3.443-.016-4.624-.092-6.236a4.92 4.92 0 00-1.001-1.8 4.937 4.937 0 00-1.664-1.664 4.926 4.926 0 00-1.8-1.001C16.38 2.015 15.198 2 11.75 2zm0 1.861c3.4 0 4.524.015 6.123.088a3.1 3.1 0 011.284.26 3.059 3.059 0 011.065.683 3.073 3.073 0 01.683 1.064c.145.44.205.95.263 1.338.044.286.06.996.071 2.022.012 1.034.008 1.212.001 1.585-.01.598-.039.889-.104 1.217a3.067 3.067 0 01-.683 1.065 3.054 3.054 0 01-1.065.683c-.441.144-.953.204-1.343.264-.278.04-1.195.061-2.921.07-1.36.006-1.56.007-1.932 0-1.153-.02-1.974-.237-2.572-.597a3.06 3.06 0 01-1.705-2.739c-.01-.261-.03-1.238-.04-2.166-.012-1.104-.02-1.337-.02-1.865 0-1.307.015-1.838.053-2.259a3.125 3.125 0 01.63-1.636 3.042 3.042 0 011.369-.967c.645-.25 1.313-.336 3.49-.345zm0 3.154a4.116 4.116 0 100 8.232 4.116 4.116 0 000-8.232zm0 1.74a2.377 2.377 0 110 4.753 2.377 2.377 0 010-4.753zm4.5-3.886a.96.96 0 11-1.92 0 .96.96 0 011.92 0z"/></svg></a>
+        <a href="#" aria-label="تلگرام" class="hover:text-green-300 transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24"><path d="M9.999 15.342c-.343 0-.664.023-.961.066l-.119.017-.846.117a.486.486 0 00-.087.017c-.122.032-.22.125-.268.244a.283.283 0 00-.03.046l-.304.673-.15.334-.057.126a.307.307 0 00-.024.076 1.41 1.41 0 00-.015.146c0 .04.01.081.025.11a.237.237 0 00-.006.042c0 .042.018.075.043.1l.06.058.034.038c.02.025.05.037.091.037h.037c.114-.03.208-.11.246-.205l.064-.134.592-1.306c.012-.031.023-.058.034-.074a.261.261 0 01.013-.016l.17-.062a2.527 2.527 0 011.245-.328h.14c.312 0 .503.078.653.149.155.074.292.194.343.303.042.087.094.297.097.547a.23.23 0 00.012.07.256.256 0 00.24.161c.045 0 .09-.012.133-.017l.023-.026.078-.097a1.51 1.51 0 00.265-.51c.028-.125.042-.235.042-.338a1.614 1.614 0 00-.656-1.15 1.64 1.64 0 00-1.264-.47zm1.002 4.619a1.524 1.524 0 01-1.825-1.31c-.013-.104-.017-.198-.017-.282a1.522 1.522 0 112.723.762c-.197.29-.494.52-.88.663zm9.816-10.479l.002-.004a.756.756 0 00-1.415-.366l.003.007-3.63 10.209-2.256-2.21 3.106-3.075a.773.773 0 00-1.222-1.03l-4.445 3.646-2.478-1.276-.015-.006-2.658-1.325a.76.76 0 10-.788 1.308l5.745 3.04-1.105 4.049a.757.757 0 001.026.903l.001-.001 9.273-7.258a.757.757 0 00.249-1.04z"/></svg></a>
+        <a href="#" aria-label="واتساپ" class="hover:text-green-300 transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.482a11.935 11.935 0 00-16.88 16.88l-1.94 5.6a.75.75 0 001.046.926l5.596-1.94a11.936 11.936 0 0011.18-21.462zm-1.996 14.891a9.65 9.65 0 01-12.152-12.15 9.663 9.663 0 0112.15 12.15zM9.07 7.686a.75.75 0 00-1.064.027l-1.073 1.163a.75.75 0 00.03 1.061l.269.252a.75.75 0 00.88.076c.436-.238 1.316-.828 1.96-1.145a.75.75 0 00.287-1.006l-1.284-2.2a.75.75 0 00-1.099-.317zm4.136 5.772a.75.75 0 01-1.04.224 7.614 7.614 0 01-2.332-2.06.75.75 0 00-1.107-.086l-.766.704a.75.75 0 01-1.132-.482 7.633 7.633 0 01-.457-3.104.75.75 0 011.243-.595l1.552 1.183a.75.75 0 00.941-.086l1.48-1.33a.75.75 0 011.127.272 7.623 7.623 0 01.453 3.51z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-green-600 mt-8 pt-6 text-center text-green-200 select-none">© تمامی حقوق برای فروشگاه قفس پرنده محفوظ است ۲۰۲۴</div>
+</footer>
+
+</body>
+</html>
