@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>وبسایت نمونه مدرن</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom scrollbar for better UX */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #4ade80;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #d1fae5;
+        }
+    </style>
+</head>
+<body class="bg-green-50 font-sans text-gray-800">
+
+<header class="bg-green-600 text-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6 md:px-12">
+        <a href="#" class="text-2xl font-extrabold tracking-wide hover:text-green-300 transition">سایت سبز</a>
+        <nav class="hidden md:flex space-x-8 font-medium text-lg">
+            <a href="#home" class="hover:text-green-300 transition">خانه</a>
+            <a href="#services" class="hover:text-green-300 transition">خدمات</a>
+            <a href="#gallery" class="hover:text-green-300 transition">گالری</a>
+            <a href="#about" class="hover:text-green-300 transition">درباره ما</a>
+            <a href="#contact" class="hover:text-green-300 transition">تماس با ما</a>
+        </nav>
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+            <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </div>
+    <nav id="mobile-menu" class="md:hidden hidden bg-green-700">
+        <a href="#home" class="block px-6 py-3 border-b border-green-600 hover:bg-green-800">خانه</a>
+        <a href="#services" class="block px-6 py-3 border-b border-green-600 hover:bg-green-800">خدمات</a>
+        <a href="#gallery" class="block px-6 py-3 border-b border-green-600 hover:bg-green-800">گالری</a>
+        <a href="#about" class="block px-6 py-3 border-b border-green-600 hover:bg-green-800">درباره ما</a>
+        <a href="#contact" class="block px-6 py-3 hover:bg-green-800">تماس با ما</a>
+    </nav>
+</header>
+
+<main class="container mx-auto px-6 md:px-12 pt-12" id="home">
+
+    <section class="relative bg-green-100 rounded-lg shadow-lg overflow-hidden mb-16">
+        <img 
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1280&q=80" 
+            alt="طبیعت سبز" 
+            class="w-full h-72 md:h-96 object-cover"
+            loading="lazy"
+        />
+        <div class="absolute inset-0 bg-green-900 bg-opacity-40 flex items-center justify-center p-6">
+            <div class="text-center text-white max-w-3xl">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg">به دنیای سبز خوش آمدید</h1>
+                <p class="text-lg md:text-xl mb-6 drop-shadow-md">وبسایت ما با طراحی مدرن و حرفه‌ای، خدمات متنوعی برای شما فراهم آورده است.</p>
+                <a href="#services" class="inline-block bg-green-400 hover:bg-green-500 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">شروع کنید</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="mb-20">
+        <h2 class="text-3xl font-bold text-green-900 mb-10 text-center">خدمات ما</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <article class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition cursor-default">
+                <img 
+                    src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" 
+                    alt="طراحی سایت" 
+                    class="rounded-md mb-4 w-full h-48 object-cover"
+                    loading="lazy"
+                />
+                <h3 class="text-xl font-semibold mb-2 text-green-700">طراحی وبسایت</h3>
+                <p class="text-gray-700 leading-relaxed">ساخت وبسایت‌های مدرن، واکنش‌گرا و حرفه‌ای برای کسب‌وکار شما با بهترین استانداردهای روز دنیا.</p>
+            </article>
+            <article class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition cursor-default">
+                <img 
+                    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" 
+                    alt="سئو و بازاریابی دیجیتال" 
+                    class="rounded-md mb-4 w-full h-48 object-cover"
+                    loading="lazy"
+                />
+                <h3 class="text-xl font-semibold mb-2 text-green-700">سئو و بازاریابی دیجیتال</h3>
+                <p class="text-gray-700 leading-relaxed">بهینه‌سازی وبسایت شما برای موتورهای جستجو و افزایش بازدید طبیعی و هدفمند.</p>
+            </article>
+            <article class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition cursor-default">
+                <img 
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" 
+                    alt="پشتیبانی فنی" 
+                    class="rounded-md mb-4 w-full h-48 object-cover"
+                    loading="lazy"
+                />
+                <h3 class="text-xl font-semibold mb-2 text-green-700">پشتیبانی و نگهداری</h3>
+                <p class="text-gray-700 leading-relaxed">پشتیبانی مستمر و به‌روزرسانی‌های دوره‌ای وبسایت شما برای اطمینان از عملکرد بهینه.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="gallery" class="mb-20">
+        <h2 class="text-3xl font-bold text-green-900 mb-10 text-center">گالری تصاویر</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <img 
+                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80" 
+                alt="تصویر طبیعت 1" 
+                class="rounded-md shadow-sm hover:shadow-lg cursor-pointer transition duration-300"
+                loading="lazy"
+            />
+            <img 
+                src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=600&q=80" 
+                alt="تصویر طبیعت 2" 
+                class="rounded-md shadow-sm hover:shadow-lg cursor-pointer transition duration-300"
+                loading="lazy"
+            />
+            <img 
+                src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=600&q=80" 
+                alt="تصویر طبیعت 3" 
+                class="rounded-md shadow-sm hover:shadow-lg cursor-pointer transition duration-300"
+                loading="lazy"
+            />
+            <img 
+                src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80" 
+                alt="تصویر طبیعت 4" 
+                class="rounded-md shadow-sm hover:shadow-lg cursor-pointer transition duration-300"
+                loading="lazy"
+            />
+            <img 
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" 
+                alt="تصویر طبیعت 5" 
+                class="rounded-md shadow-sm hover:shadow-lg cursor-pointer transition duration-300"
+                loading="lazy"
+            />
+            <img 
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" 
+                alt="تصویر طبیعت 6" 
+                class="rounded-md shadow-sm hover:shadow-lg cursor-pointer transition duration-300"
+                loading="lazy"
+            />
+            <img 
+                src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=600&q=80" 
+                alt="تصویر طبیعت 7" 
+                class="rounded-md shadow-sm hover:shadow-lg cursor-pointer transition duration-300"
+                loading="lazy"
+            />
+            <img 
+                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" 
+                alt="تصویر طبیعت 8" 
+                class="rounded-md shadow-sm hover:shadow-lg cursor-pointer transition duration-300"
+                loading="lazy"
+            />
+        </div>
+    </section>
+
+    <section id="about" class="mb-20 bg-white rounded-lg shadow-lg p-10 md:p-16">
+        <h2 class="text-3xl font-bold text-green-900 mb-8 text-center">درباره ما</h2>
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+            <img 
+                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" 
+                alt="تیم حرفه‌ای" 
+                class="w-48 h-48 rounded-full object-cover shadow-lg"
+                loading="lazy"
+            />
+            <p class="text-gray-700 max-w-3xl leading-relaxed text-justify text-lg md:text-xl">
+                تیم ما متشکل از افراد با تجربه و خلاق در حوزه طراحی و توسعه وب است. هدف ما ارائه بهترین خدمات با بهره‌گیری از تکنولوژی‌های روز و رویکردی سبز و پایدار است. اعتماد شما سرمایه ماست و همواره در تلاشیم تا فراتر از انتظارات شما عمل کنیم.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="mb-20 bg-green-100 rounded-lg shadow-lg p-8 md:p-14">
+        <h2 class="text-3xl font-bold text-green-900 mb-10 text-center">تماس با ما</h2>
+        <form class="max-w-3xl mx-auto space-y-6" action="#" method="POST">
+            <div>
+                <label for="name" class="block mb-2 font-semibold text-green-800">نام و نام خانوادگی</label>
+                <input type="text" id="name" name="name" required placeholder="نام خود را وارد کنید"
+                       class="w-full px-4 py-3 rounded-lg border border-green-400 focus:outline-none focus:ring-2 focus:ring-green-500" />
+            </div>
+            <div>
+                <label for="email" class="block mb-2 font-semibold text-green-800">ایمیل</label>
+                <input type="email" id="email" name="email" required placeholder="ایمیل خود را وارد کنید"
+                       class="w-full px-4 py-3 rounded-lg border border-green-400 focus:outline-none focus:ring-2 focus:ring-green-500" />
+            </div>
+            <div>
+                <label for="message" class="block mb-2 font-semibold text-green-800">پیام شما</label>
+                <textarea id="message" name="message" rows="5" required placeholder="پیام خود را اینجا بنویسید"
+                          class="w-full px-4 py-3 rounded-lg border border-green-400 focus:outline-none focus:ring-2 focus:ring-green-500 resize-none"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit"
+                        class="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+                    ارسال پیام
+                </button>
+            </div>
+        </form>
+    </section>
+
+</main>
+
+<footer class="bg-green-700 text-green-200 py-8 text-center text-sm">
+    <p>© ۲۰۲۴ سایت سبز. تمامی حقوق محفوظ است.</p>
+</footer>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>
