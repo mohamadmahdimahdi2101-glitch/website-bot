@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>چالش دوستانه دو نفره | بازی دو نفره آنلاین</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Exo&family=Poppins&display=swap');
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f111a;
+    color: #e4e6eb;
+  }
+  h1, h2, h3 {
+    font-family: 'Exo', sans-serif;
+  }
+  .btn-primary {
+    background: linear-gradient(90deg, #00f0ff, #37ff8b);
+    color: #0f111a;
+    font-weight: 700;
+    box-shadow: 0 0 12px #37ff8baa;
+    transition: background-position 0.4s ease-in-out;
+    background-size: 200% 100%;
+    background-position: right bottom;
+  }
+  .btn-primary:hover {
+    background-position: left bottom;
+    box-shadow: 0 0 20px #00f0ffaa;
+  }
+  .btn-accent {
+    background: #ff4e55;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 0 10px #ff4e5577;
+    transition: background-color 0.3s ease;
+  }
+  .btn-accent:hover {
+    background: #e03e45;
+    box-shadow: 0 0 15px #e03e4588;
+  }
+  a.transition-color:hover {
+    color: #37ff8b !important;
+  }
+</style>
+</head>
+<body class="min-h-screen flex flex-col">
+<header class="flex justify-between items-center px-6 py-4 border-b border-gray-700 bg-gradient-to-r from-black via-gray-900 to-black">
+  <a href="#" class="text-3xl font-exo text-cyan-400 hover:text-green-400 font-bold select-none">دوست‌بازی</a>
+  <nav class="space-x-6 hidden md:flex">
+    <a href="#how" class="text-gray-300 hover:text-cyan-400 transition-color font-semibold">چگونه بازی کنیم</a>
+    <a href="#features" class="text-gray-300 hover:text-cyan-400 transition-color font-semibold">ویژگی‌ها</a>
+    <a href="#demo" class="text-gray-300 hover:text-cyan-400 transition-color font-semibold">نمایش بازی</a>
+    <a href="#invite" class="text-gray-300 hover:text-cyan-400 transition-color font-semibold">دعوت دوست</a>
+  </nav>
+</header>
+
+<main class="flex-grow">
+  <!-- Hero Section -->
+  <section class="relative flex flex-col-reverse md:flex-row items-center max-w-7xl mx-auto px-6 py-16 gap-12 md:gap-24">
+    <div class="flex flex-col max-w-xl text-center md:text-right">
+      <h1 class="text-4xl md:text-6xl font-exo font-extrabold mb-3 leading-tight text-cyan-400 drop-shadow-lg">
+        چالش بهترین دوست‌ات را در نبرد دو نفره اختصاصی!
+      </h1>
+      <p class="mb-8 text-lg md:text-xl text-gray-300 font-semibold">
+        بازی کن، رقابت کن و در این تجربه منحصربه‌فرد چندنفره فقط به دو نفر متصل شو.
+      </p>
+      <a href="#demo" class="btn-primary py-3 px-8 rounded-full text-lg max-w-max self-center md:self-end shadow-lg">شروع بازی</a>
+    </div>
+    <div class="w-full md:w-1/2 rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-tr from-cyan-500 to-green-400 animate-gradient-x">
+      <img loading="lazy" class="w-full h-auto object-cover" src="https://source.unsplash.com/featured/800x600/?gaming,computer,gamepad" alt="تصویر بازی دو نفره">
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how" class="max-w-5xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-exo font-bold text-green-400 text-center mb-10">چگونه بازی کنیم؟</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <article class="bg-gray-800 rounded-xl p-8 flex flex-col items-center shadow-lg hover:shadow-green-500/70 transition-shadow">
+        <div class="mb-6 w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center text-2xl font-exo text-black font-bold select-none">۱</div>
+        <h3 class="mb-3 text-xl font-semibold text-white">شروع بازی</h3>
+        <p class="text-gray-300 text-center">دکمه «شروع بازی» را بزنید و وارد محیط بازی شوید.</p>
+      </article>
+      <article class="bg-gray-800 rounded-xl p-8 flex flex-col items-center shadow-lg hover:shadow-green-500/70 transition-shadow">
+        <div class="mb-6 w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center text-2xl font-exo text-black font-bold select-none">۲</div>
+        <h3 class="mb-3 text-xl font-semibold text-white">دعوت دوست</h3>
+        <p class="text-gray-300 text-center">لینک دعوت بسازید و به راحتی برای دوست خود ارسال کنید.</p>
+      </article>
+      <article class="bg-gray-800 rounded-xl p-8 flex flex-col items-center shadow-lg hover:shadow-green-500/70 transition-shadow">
+        <div class="mb-6 w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center text-2xl font-exo text-black font-bold select-none">۳</div>
+        <h3 class="mb-3 text-xl font-semibold text-white">بازی و رقابت کنید</h3>
+        <p class="text-gray-300 text-center">بلافاصله با دوستتان وارد بازی شوید و رقابت را آغاز کنید.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="bg-gradient-to-tr from-black via-gray-900 to-black py-16 px-6">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-exo font-extrabold text-cyan-400 mb-3">ویژگی‌های برتر بازی دو نفره</h2>
+      <p class="text-gray-300 max-w-3xl mx-auto text-lg font-semibold">تجربه‌ای منحصربه‌فرد از بازی دو نفره با امکانات ویژه برای شما و دوستتان</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 max-w-6xl mx-auto text-center">
+      <div class="bg-gray-800 rounded-2xl p-8 flex flex-col items-center shadow-lg hover:shadow-cyan-400 transition-shadow">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=80&q=80" alt="اتصال فوری" class="mb-4 w-16 h-16" loading="lazy" />
+        <h3 class="mb-2 font-exo font-semibold text-teal-400">اتصال فوری</h3>
+        <p class="text-gray-300">بدون معطلی با دوستتان در سریع‌ترین زمان متصل شوید.</p>
+      </div>
+      <div class="bg-gray-800 rounded-2xl p-8 flex flex-col items-center shadow-lg hover:shadow-green-400 transition-shadow">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=80&q=80" alt="چت زنده" class="mb-4 w-16 h-16" loading="lazy" />
+        <h3 class="mb-2 font-exo font-semibold text-green-400">چت زنده</h3>
+        <p class="text-gray-300">صحبت و هماهنگی با دوستتان در حین بازی به شکل زنده.</p>
+      </div>
+      <div class="bg-gray-800 rounded-2xl p-8 flex flex-col items-center shadow-lg hover:shadow-purple-400 transition-shadow">
+        <img src="https://images.unsplash.com/photo-1573164713347-df7a236d06fa?auto=format&fit=crop&w=80&q=80" alt="آواتار شخصی" class="mb-4 w-16 h-16" loading="lazy" />
+        <h3 class="mb-2 font-exo font-semibold text-purple-400">آواتار قابل تنظیم</h3>
+        <p class="text-gray-300">شخصی‌سازی ظاهر و ویژگی‌های کاراکتر خود و دوستتان.</p>
+      </div>
+      <div class="bg-gray-800 rounded-2xl p-8 flex flex-col items-center shadow-lg hover:shadow-pink-400 transition-shadow">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=80&q=80" alt="رده‌بندی جهانی" class="mb-4 w-16 h-16" loading="lazy" />
+        <h3 class="mb-2 font-exo font-semibold text-pink-400">رده‌بندی جهانی</h3>
+        <p class="text-gray-300">رقابت در جدول جهانی و نمایش جایگاه شما و دوستتان.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Game Preview -->
+  <section id="demo" class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-exo font-bold text-cyan-400 text-center mb-10">نمایش زنده بازی</h2>
+    <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-lg border-4 border-cyan-400 bg-black">
+      <iframe class="w-full h-full" src="https://www.youtube.com/embed/NEUxsc3Zyvw" title="نمایش بازی دو نفره" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-gradient-to-bl from-cyan-900 via-black to-black py-16 px-6">
+    <div class="max-w-4xl mx-auto max-h-40">
+      <div class="bg-gray-900 bg-opacity-70 rounded-xl p-12 shadow-cyan-400/50 shadow-lg flex flex-col items-center text-center">
+        <svg class="w-10 h-10 text-cyan-400 mb-3" fill="currentColor" viewBox="0 0 24 24"><path d="M7.17 6A5 5 0 0 1 12 9.83V12a5 5 0 0 1-4.83 5H6a5 5 0 0 1 1.17-11zM18.17 6A5 5 0 0 1 23 9.83V12a5 5 0 0 1-4.83 5h-1a5 5 0 0 1 1.17-11z"/></svg>
+        <p class="text-xl md:text-2xl font-semibold text-gray-100 italic max-w-3xl">"بهترین بازی دو نفره‌ای که بازی کردم — سرگرم‌کننده و اعتیادآور!"</p>
+        <footer class="mt-5 text-cyan-300 font-exo font-bold text-lg">– گیمر ایکس</footer>
+      </div>
+    </div>
+  </section>
+
+  <!-- Invite Friend Feature -->
+  <section id="invite" class="max-w-5xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-between gap-14">
+    <div class="max-w-xl text-center md:text-right">
+      <h2 class="text-3xl font-exo font-extrabold text-green-400 mb-6">دعوت دوستت را آسان کن!</h2>
+      <p class="text-gray-300 mb-8 text-lg font-semibold">به دوستت لینک بازی را بده و با هم وارد معرکه شوید.</p>
+      <button id="copyBtn" class="btn-accent py-3 px-8 rounded-full text-lg shadow-md select-none transition-shadow hover:shadow-lg">کپی لینک دعوت</button>
+      <div class="mt-8 flex justify-center md:justify-end gap-6 text-gray-300">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://twofriendgame.com" target="_blank" rel="noopener" aria-label="فیس‌بوک" class="hover:text-blue-600 transition-colors text-3xl">
+          <svg fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path d="M22.675 0h-21.35C.598 0 0 .595 0 1.326v21.348C0 23.405.598 24 1.325 24h11.495v-9.294H9.693v-3.622h3.127V8.414c0-3.1 1.893-4.787 4.658-4.787 1.325 0 2.466.099 2.797.143v3.24h-1.917c-1.504 0-1.795.715-1.795 1.763v2.312h3.59l-.467 3.622h-3.123V24h6.116C23.404 24 24 23.405 24 22.674V1.326C24 .596 23.404 0 22.675 0z"/></svg>
+        </a>
+        <a href="https://twitter.com/intent/tweet?url=https://twofriendgame.com&text=بیا%20با%20دوستم%20این%20بازی%20دو%20نفره%20را%20انجام%20دهیم!" target="_blank" rel="noopener" aria-label="توییتر" class="hover:text-sky-400 transition-colors text-3xl">
+          <svg fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path d="M23.954 4.569c-.885.392-1.83.656-2.825.775a4.93 4.93 0 0 0 2.163-2.724 9.936 9.936 0 0 1-3.127 1.195 4.917 4.917 0 0 0-8.373 4.482 13.944 13.944 0 0 1-10.15-5.149 4.822 4.822 0 0 0-.664 2.475c0 1.708.869 3.215 2.188 4.099a4.904 4.904 0 0 1-2.229-.616c-.054 2.388 1.669 4.635 4.15 5.125a4.996 4.996 0 0 1-2.224.085 4.922 4.922 0 0 0 4.6 3.417 9.868 9.868 0 0 1-6.12 2.107c-.398 0-.79-.022-1.175-.067a13.91 13.91 0 0 0 7.557 2.211c9.054 0 14-7.496 14-13.986 0-.21 0-.423-.017-.633a9.936 9.936 0 0 0 2.46-2.548l-.047-.02z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/twofriendgame" target="_blank" rel="noopener" aria-label="اینستاگرام" class="hover:text-pink-500 transition-colors text-3xl">
+          <svg fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5a3.75 3.75 0 0 0 3.75-3.75v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5zm8.87 2.28a1.12 1.12 0 1 1 0 2.24 1.12 1.12 0 0 1 0-2.24zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+        </a>
+      </div>
+    </div>
+    <input id="inviteLink" readonly class="hidden" type="text" value="https://twofriendgame.com/join?room=example123" />
+  </section>
+</main>
+
+<footer class="bg-gray-900 border-t border-gray-800 py-8 px-6 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto space-y-4 md:space-y-0 text-gray-400 text-sm">
+  <p>سوال دارید؟ با ما تماس بگیرید: <a href="mailto:support@twofriendgame.com" class="text-cyan-400 hover:text-green-400 transition-colors">support@twofriendgame.com</a></p>
+  <div class="flex space-x-6 rtl:space-x-reverse">
+    <a href="https://twofriendgame.com/privacy" class="hover:text-cyan-400 transition-colors">سیاست حفظ حریم خصوصی</a>
+    <a href="https://twitter.com/twofriendgame" class="hover:text-cyan-400 transition-colors">توییتر</a>
+    <a href="https://facebook.com/twofriendgame" class="hover:text-cyan-400 transition-colors">فیسبوک</a>
+  </div>
+  <p class="opacity-60 select-none">© ۲۰۲۴ دوست‌بازی. همه حقوق محفوظ است.</p>
+</footer>
+
+<script>
+  const copyBtn = document.getElementById('copyBtn');
+  const inviteLinkInput = document.getElementById('inviteLink');
+
+  copyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(inviteLinkInput.value).then(() => {
+      copyBtn.textContent = 'کپی شد!';
+      copyBtn.disabled = true;
+      setTimeout(() => {
+        copyBtn.textContent = 'کپی لینک دعوت';
+        copyBtn.disabled = false;
+      }, 2000);
+    });
+  });
+</script>
+</body>
+</html>
