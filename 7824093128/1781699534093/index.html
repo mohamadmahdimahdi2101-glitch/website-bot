@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>وبسایت نمونه فارسی</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <header class="bg-gradient-to-r from-green-600 to-green-400 shadow-md">
+        <div class="container mx-auto px-5 py-6 flex items-center justify-between">
+            <h1 class="text-white text-3xl font-extrabold">وبسایت سبز</h1>
+            <nav class="space-x-6 hidden md:flex">
+                <a href="#home" class="text-white hover:text-gray-200 transition">خانه</a>
+                <a href="#about" class="text-white hover:text-gray-200 transition">درباره ما</a>
+                <a href="#services" class="text-white hover:text-gray-200 transition">خدمات</a>
+                <a href="#gallery" class="text-white hover:text-gray-200 transition">گالری</a>
+                <a href="#contact" class="text-white hover:text-gray-200 transition">تماس با ما</a>
+            </nav>
+            <button id="menuBtn" class="md:hidden text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+        <nav id="mobileMenu" class="hidden bg-green-500 md:hidden px-5 pb-4 space-y-3 font-semibold">
+            <a href="#home" class="block text-white hover:text-gray-200">خانه</a>
+            <a href="#about" class="block text-white hover:text-gray-200">درباره ما</a>
+            <a href="#services" class="block text-white hover:text-gray-200">خدمات</a>
+            <a href="#gallery" class="block text-white hover:text-gray-200">گالری</a>
+            <a href="#contact" class="block text-white hover:text-gray-200">تماس با ما</a>
+        </nav>
+    </header>
+
+    <section id="home" class="relative bg-green-50 pt-16 pb-20 md:pb-32 min-h-[80vh]">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Wasatch_Mountains_UT_looking_south_from_Salt_Lake_City.jpg" alt="بک گراند سبز کوهستان" class="absolute inset-0 w-full h-full object-cover opacity-30" />
+        <div class="relative container mx-auto px-5 text-center flex flex-col justify-center min-h-[60vh]">
+            <h2 class="text-4xl md:text-6xl font-extrabold text-green-900 mb-5">به وبسایت سبز ما خوش آمدید</h2>
+            <p class="text-green-800 max-w-3xl mx-auto text-lg md:text-xl mb-10">اینجا جایی است که طبیعت، آرامش و زیبایی با هم ترکیب شده‌اند تا بهترین تجربه را به شما هدیه دهند.</p>
+            <a href="#about" class="inline-block bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-xl shadow-lg font-semibold transition">بیشتر بدانید</a>
+        </div>
+    </section>
+
+    <section id="about" class="container mx-auto px-5 py-20">
+        <div class="md:flex md:items-center md:space-x-10 space-y-8 md:space-y-0">
+            <div class="md:flex-1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/New_Green_Leaves.jpg" alt="برگ های سبز تازه" class="rounded-3xl shadow-lg max-w-full" />
+            </div>
+            <div class="md:flex-1 text-right">
+                <h3 class="text-3xl font-bold text-green-800 mb-6">درباره ما</h3>
+                <p class="text-green-700 mb-4 leading-relaxed">
+                    وبسایت ما با هدف ارتقاء فرهنگ سبز و حفاظت از محیط زیست ایجاد شده است. ما معتقدیم که هر فردی می‌تواند نقش موثری در حفظ زیبایی‌های طبیعت ایفا کند.
+                </p>
+                <p class="text-green-700 leading-relaxed">
+                    از طریق ارائه مقالات آموزشی، خدمات مشاوره‌ای و معرفی راهکارهای سبز، تلاش می‌کنیم تا به محیط زیست احترام بگذاریم و نسل‌های آینده را با دنیایی پاک و سالم مواجه کنیم.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-green-100 py-20">
+        <div class="container mx-auto px-5 text-right">
+            <h3 class="text-3xl font-bold text-green-900 mb-12 text-center">خدمات ما</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Tree_planting_in_Kenema%2C_Sierra_Leone.jpg" alt="کاشت درخت" class="rounded-md mb-5 w-full h-48 object-cover" />
+                    <h4 class="text-xl font-semibold text-green-800 mb-3">کاشت درخت</h4>
+                    <p class="text-green-700 leading-relaxed">برنامه‌های ویژه برای کاشت درختان بومی و احیای جنگل‌ها در مناطق مختلف.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Solar_panels_Sunlight_Photovoltaic_Cells.jpg" alt="انرژی خورشیدی" class="rounded-md mb-5 w-full h-48 object-cover" />
+                    <h4 class="text-xl font-semibold text-green-800 mb-3">انرژی‌های تجدید پذیر</h4>
+                    <p class="text-green-700 leading-relaxed">مشاوره و اجرای پروژه‌های انرژی خورشیدی برای منازل و سازمان‌ها.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Bicycle_commuting_in_Uppsala%2C_Sweden_%281%29.jpg" alt="دوچرخه سواری" class="rounded-md mb-5 w-full h-48 object-cover" />
+                    <h4 class="text-xl font-semibold text-green-800 mb-3">حمل و نقل سبز</h4>
+                    <p class="text-green-700 leading-relaxed">ترغیب به استفاده از دوچرخه و وسایل نقلیه پاک به منظور کاهش آلودگی هوا.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container mx-auto px-5 py-20 text-right">
+        <h3 class="text-3xl font-bold text-green-900 mb-12 text-center">گالری تصاویر</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Green_field_-_panoramio.jpg" alt="مزرعه سبز" class="rounded-xl shadow-md hover:scale-105 transition-transform cursor-pointer" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Green_leaves_panorama.jpg" alt="برگ‌ها" class="rounded-xl shadow-md hover:scale-105 transition-transform cursor-pointer" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Climber_in_the_woods.JPG" alt="کوهنوردی در جنگل" class="rounded-xl shadow-md hover:scale-105 transition-transform cursor-pointer" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/River_Laborec_-_Slovakia.JPG" alt="رودخانه سبز" class="rounded-xl shadow-md hover:scale-105 transition-transform cursor-pointer" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Forest_in_Sweden.jpg" alt="جنگل سرسبز" class="rounded-xl shadow-md hover:scale-105 transition-transform cursor-pointer" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Trees_in_Norway.jpg" alt="درختان" class="rounded-xl shadow-md hover:scale-105 transition-transform cursor-pointer" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Green_meadow_in_sunny_day.jpg" alt="چمنزار سبز" class="rounded-xl shadow-md hover:scale-105 transition-transform cursor-pointer" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Green_Grass_in_the_Field.JPG" alt="چمن سبز" class="rounded-xl shadow-md hover:scale-105 transition-transform cursor-pointer" />
+        </div>
+    </section>
+
+    <section id="contact" class="bg-green-50 py-20">
+        <div class="container mx-auto px-5 max-w-3xl text-right">
+            <h3 class="text-3xl font-bold text-green-800 mb-8 text-center">تماس با ما</h3>
+            <form class="bg-white rounded-xl p-8 shadow-lg" action="#" method="POST" dir="rtl" novalidate>
+                <div class="mb-6">
+                    <label for="name" class="block mb-2 font-semibold text-green-700">نام و نام خانوادگی</label>
+                    <input type="text" id="name" name="name" required class="w-full border border-green-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="نام شما" />
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block mb-2 font-semibold text-green-700">ایمیل</label>
+                    <input type="email" id="email" name="email" required class="w-full border border-green-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="example@mail.com" />
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block mb-2 font-semibold text-green-700">پیام شما</label>
+                    <textarea id="message" name="message" rows="5" required class="w-full border border-green-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="متن پیام خود را اینجا بنویسید"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-green-700 hover:bg-green-800 text-white font-bold py-3 rounded-md transition-all">ارسال پیام</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-green-900 text-green-100 py-8 mt-16">
+        <div class="container mx-auto px-5 text-center text-sm">
+            © ۱۴۰۲ وبسایت سبز. همه حقوق محفوظ است.
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
