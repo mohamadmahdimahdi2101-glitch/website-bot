@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>برای مادرم — با عشق و سپاس</title>
+  <!-- فونت فارسی Vazirmatn از CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css">
+  <style>
+    :root{
+      --bg:#FFF8F5;
+      --card:#fff;
+      --accent:#FF6B6B;
+      --accent-2:#FF9A8B;
+      --muted:#6B6B6B;
+      --radius:14px;
+      --gap:1.25rem;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Vazirmatn", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,var(--bg) 0%, #FFF0EE 100%);
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:2rem 1rem;
+      line-height:1.6;
+    }
+
+    .container{max-width:1000px;margin:0 auto;display:flex;flex-direction:column;gap:3rem;}
+
+    /* Header / Hero */
+    header{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+    .brand{display:flex;align-items:center;gap:.75rem}
+    .logo{
+      width:56px;height:56px;border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px;
+      box-shadow:0 6px 18px rgba(255,107,107,0.15);
+    }
+    nav{display:flex;gap:1rem;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .cta{
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:white;padding:.65rem 1rem;border-radius:10px;text-decoration:none;font-weight:700;
+      box-shadow:0 8px 20px rgba(255,107,107,0.12);
+    }
+
+    .hero{
+      display:grid;grid-template-columns:1fr 360px;gap:2rem;align-items:center;
+      background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.8));
+      padding:2rem;border-radius:var(--radius);box-shadow:0 10px 30px rgba(17,17,17,0.05);
+    }
+    .hero h1{margin:0;font-size:2rem;color:#3b2b2b;letter-spacing:-0.01em}
+    .hero p{margin:.75rem 0;color:var(--muted)}
+    .hero .buttons{display:flex;gap:.75rem;margin-top:1rem}
+    .btn{
+      padding:.7rem 1rem;border-radius:10px;border:0;font-weight:700;cursor:pointer;
+      transition:transform .18s ease, box-shadow .18s ease;
+    }
+    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff}
+    .btn.ghost{background:transparent;border:1px solid rgba(0,0,0,0.06);color:#333}
+    .btn:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(0,0,0,0.08)}
+
+    .hero-visual{
+      border-radius:12px;background:
+      radial-gradient(1200px 400px at 0% 0%, rgba(255,155,140,0.08), transparent),
+      linear-gradient(180deg,#fff,#fff);
+      padding:0.5rem;display:flex;align-items:center;justify-content:center;
+    }
+    .photo{
+      width:100%;height:320px;border-radius:10px;background-size:cover;background-position:center;
+      box-shadow:0 12px 30px rgba(11,11,11,0.06);
+    }
+
+    /* Sections */
+    section{padding:1rem 0}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
+    .card{background:var(--card);padding:1rem;border-radius:12px;box-shadow:0 8px 20px rgba(12,12,12,0.04)}
+    .muted{color:var(--muted);font-size:0.95rem}
+
+    /* Memories / Timeline */
+    .timeline{display:flex;flex-direction:column;gap:1rem}
+    .mem{
+      display:flex;gap:1rem;align-items:flex-start;
+    }
+    .dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(90deg,var(--accent),var(--accent-2));margin-top:6px;flex:0 0 12px}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:.65rem}
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:8px;display:block;transition:transform .25s ease;cursor:pointer}
+    .gallery img:hover{transform:scale(1.04)}
+
+    /* Messages */
+    .msgs{display:flex;flex-direction:column;gap:.75rem}
+    .msg{display:flex;gap:.75rem;align-items:flex-start}
+    .avatar{width:48px;height:48px;border-radius:50%;background:#eee;flex:0 0 48px;display:flex;align-items:center;justify-content:center;color:#777;font-weight:700}
+
+    /* Contact / form */
+    form{display:flex;flex-direction:column;gap:.65rem}
+    input[type="text"], input[type="email"], textarea{
+      padding:.8rem;border-radius:8px;border:1px solid rgba(0,0,0,0.07);font-size:1rem;font-family:inherit;
+      resize:vertical;
+    }
+    .form-row{display:flex;gap:.65rem}
+    .form-row .col{flex:1}
+
+    footer{display:flex;justify-content:space-between;align-items:center;gap:1rem;font-size:0.9rem;color:var(--muted)}
+    .print-btn{background:transparent;border:1px dashed rgba(0,0,0,0.06);padding:.5rem 0.7rem;border-radius:8px;cursor:pointer}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr; }
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .grid-3{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start;gap:.75rem}
+      footer{flex-direction:column;align-items:flex-start;gap:.5rem}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">م</div>
+        <div>
+          <div style="font-weight:800">برای مادرم</div>
+          <div class="muted" style="font-size:0.9rem">یک صفحهٔ کوچک برای بزرگداشت و سپاسگزاری</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#memories">خاطرات</a>
+        <a href="#gallery">گالری</a>
+        <a href="#messages">پیام‌ها</a>
+        <a href="#contact" class="cta">فرستادن پیام</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="جلد">
+        <div>
+          <h1>برای مادرم، با عشق و سپاس</h1>
+          <p>مادر عزیزم، تو الهام‌بخش‌ترین حضورِ زندگی منی. این صفحه را برای قدردانی از تمام محبت‌ها، حمایت‌ها و لحظه‌های ناب ساخته‌ام.</p>
+          <div class="buttons">
+            <button class="btn primary" id="openLetter">خواندن نامه</button>
+            <a href="#gallery" class="btn ghost">دیدن گالری</a>
+          </div>
+
+          <div style="margin-top:1.25rem;">
+            <strong>نکته:</strong> می‌توانید عکس‌های دلخواه را جایگزین کنید، پیام بفرستید یا این صفحه را چاپ کنید تا به مادرتان هدیه دهید.
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="photo" id="heroPhoto"
+               style="background-image:url('https://images.unsplash.com/photo-1584892815470-3cee3f7b4101?auto=format&fit=crop&w=800&q=80');">
+          </div>
+        </div>
+      </section>
+
+      <!-- The Thank-you Letter (modal-like simple) -->
+      <div id="letter" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);align-items:center;justify-content:center;padding:1rem;z-index:50;">
+        <div style="max-width:720px;width:100%;background:white;border-radius:12px;padding:1.25rem;box-shadow:0 20px 60px rgba(0,0,0,0.4);direction: rtl;">
+          <button id="closeLetter" style="float:left;background:transparent;border:0;font-weight:800;font-size:18px;cursor:pointer">✕</button>
+          <h2 style="margin-top:0">نامهٔ من به مادر</h2>
+          <p class="muted" style="white-space: pre-line;line-height:1.5;font-size:1.1rem;">
+            مادرم عزیزم،
+            از تو ممنونم برای هر لبخند، برای هر شب بیداری، برای هر تلاشی که در خاموشی انجام دادی تا من به رویاهایم نزدیک شوم.
+            حضورت همیشه قوت قلبم بوده و هیچ کلمه‌ای توان وصف محبت تو را ندارد.
+          </p>
+          <p class="muted" style="font-weight:700;font-size:1.1rem;">با عشق، [نام شما]</p>
+          <div style="display:flex;gap:.5rem;justify-content:flex-end;margin-top:1rem">
+            <button class="btn ghost" id="printCard">چاپ کارت</button>
+            <button class="btn primary" id="closeLetter2">بستن</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Memories / Timeline -->
+      <section id="memories">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem">
+          <h3 style="margin:0">خاطراتِ ما</h3>
+          <div class="muted">به ترتیبِ زمانی — لحظاتی که همیشه با هم داشتیم</div>
+        </div>
+
+        <div class="timeline card">
+          <div class="mem">
+            <div class="dot" aria-hidden="true"></div>
+            <div>
+              <strong>تولد من</strong>
+              <div class="muted">روزیکه دست‌های تو اولین بار مرا در آغوش گرفت.</div>
+            </div>
+          </div>
+
+          <div class="mem">
+            <div class="dot" aria-hidden="true"></div>
+            <div>
+              <strong>اولین روز مدرسه</strong>
+              <div class="muted">همراهی و دلگرمی که تا همیشه یادم می‌ماند.</div>
+            </div>
+          </div>
+
+          <div class="mem">
+            <div class="dot" aria-hidden="true"></div>
+            <div>
+              <strong>لحظاتِ سکوت و مراقبت</strong>
+              <div class="muted">شب‌هایی که بی‌خوابی کشیدی تا روزِ بعد من شاد باشم.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section id="gallery">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem">
+          <h3 style="margin:0">گالری</h3>
+          <div class="muted">تصاویر خاطره‌انگیز — روی هر عکس کلیک کنید</div>
+        </div>
+
+        <div class="gallery">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="عکس مادر با فرزند" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1520975919544-6d0b2c8b7d7f?auto=format&fit=crop&w=800&q=80" alt="دست در دست مادر" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=800&q=80" alt="خانواده شاد" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=800&q=80" alt="لبخند مادر" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" alt="لحظه خاص" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1511485977113-f34c92461ad9?auto=format&fit=crop&w=800&q=80" alt="دوستی و محبت" loading="lazy" />
+        </div>
+      </section>
+
+      <!-- Messages -->
+      <section id="messages">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem">
+          <h3 style="margin:0">پیام‌ها</h3>
+          <div class="muted">خانواده و دوستان چه می‌گویند</div>
+        </div>
+
+        <div class="card msgs">
+          <div class="msg">
+            <div class="avatar" aria-label="سارا">س</div>
+            <div>
+              <strong>سارا — خواهر</strong>
+              <div class="muted">ممنونم که همیشه برای همه، یک مادر واقعی بودی. وجودت نعمت است.</div>
+            </div>
+          </div>
+
+          <div class="msg">
+            <div class="avatar" aria-label="مهدی">م</div>
+            <div>
+              <strong>مهدی — دوست خانواده</strong>
+              <div class="muted">مادری با قلب بزرگ و دست‌هایی که همیشه کمک می‌کنند. سپاس از تو.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact / Leave a Message -->
+      <section id="contact">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem">
+          <h3 style="margin:0">خروجی/ارسال پیام</h3>
+          <div class="muted">پیام خود را برای مادر بنویسید — از طریق ایمیل یا چاپ</div>
+        </div>
+
+        <div class="card">
+          <form id="msgForm" onsubmit="return prepareMail(event)" autocomplete="off">
+            <div class="form-row">
+              <div class="col"><input type="text" id="name" placeholder="نام شما" required autocomplete="name"></div>
+              <div class="col"><input type="email" id="email" placeholder="ایمیل (اختیاری)" autocomplete="email"></div>
+            </div>
+            <textarea id="message" rows="5" placeholder="پیام گرم و کوتاه خود را بنویسید..." required></textarea>
+            <div style="display:flex;gap:.5rem;justify-content:flex-end;margin-top:.25rem">
+              <button type="submit" class="btn primary">فرستادن به ایمیل</button>
+              <button type="button" class="btn ghost" onclick="window.print()">چاپ صفحه</button>
+            </div>
+            <div class="muted" style="margin-top:.5rem">توجه: دکمهٔ «فرستادن به ایمیل» ایمیل‌کلاینت شما را باز می‌کند (در دستگاهی که ایمیل دارد).</div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© ۲۰۲۶ با عشق — از طرف [نام شما]</div>
+      <div style="display:flex;gap:.5rem;align-items:center">
+        <button class="print-btn" onclick="window.print()" aria-label="چاپ کارت">پرینت کارت</button>
+        <div class="muted">ساخته‌شده با عشق و سپاس</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // نمایش/پنهان نامه
+    const letter = document.getElementById('letter');
+    document.getElementById('openLetter').addEventListener('click', ()=>{ letter.style.display='flex'; });
+    document.getElementById('closeLetter').addEventListener('click', ()=>{ letter.style.display='none'; });
+    document.getElementById('closeLetter2').addEventListener('click', ()=>{ letter.style.display='none'; });
+
+    // چاپ کارت از داخل نامه
+    document.getElementById('printCard').addEventListener('click', ()=>{ window.print(); });
+
+    // آماده‌سازی mailto از فرم
+    function prepareMail(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('message').value.trim();
+
+      const recipient = ''; // می‌توانید این را به ایمیل مادرتان تغییر دهید
+      const subject = encodeURIComponent('یک پیام از ' + name + ' برای شما');
+      const body = encodeURIComponent('نام فرستنده: ' + name + (email ? '\nایمیل: ' + email : '') + '\n\n' + msg);
+
+      const mailto = 'mailto:' + recipient + '?subject=' + subject + '&body=' + body;
+      window.location.href = mailto;
+      return false;
+    }
+  </script>
+</body>
+</html>
