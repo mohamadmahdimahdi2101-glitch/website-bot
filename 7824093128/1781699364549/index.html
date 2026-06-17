@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>وبسایت نمونه مدرن</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-vazir selection:bg-green-400 selection:text-white">
+
+<header class="bg-white shadow-md sticky top-0 z-30">
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#" class="text-2xl font-extrabold text-green-600">وب‌سایت من</a>
+    <nav class="space-x-6 hidden md:flex text-gray-700 font-semibold">
+      <a href="#home" class="hover:text-green-600 transition">خانه</a>
+      <a href="#services" class="hover:text-green-600 transition">خدمات</a>
+      <a href="#gallery" class="hover:text-green-600 transition">گالری</a>
+      <a href="#contact" class="hover:text-green-600 transition">تماس با ما</a>
+    </nav>
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+      </svg>
+    </button>
+  </div>
+  <nav id="mobile-menu" class="hidden bg-white shadow-md px-6 py-4 md:hidden space-y-3 font-semibold text-gray-700">
+    <a href="#home" class="block hover:text-green-600 transition">خانه</a>
+    <a href="#services" class="block hover:text-green-600 transition">خدمات</a>
+    <a href="#gallery" class="block hover:text-green-600 transition">گالری</a>
+    <a href="#contact" class="block hover:text-green-600 transition">تماس با ما</a>
+  </nav>
+</header>
+
+<section id="home" class="relative bg-green-50 min-h-screen flex items-center py-20 px-6 md:px-12">
+  <div class="container mx-auto grid md:grid-cols-2 gap-16 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6 text-green-700 leading-tight">خوش آمدید به وبسایت ما</h1>
+      <p class="mb-8 text-green-900 text-lg md:text-xl">اینجا جایی است که بهترین خدمات با بالاترین کیفیت به شما ارائه می‌شود. با ما همراه باشید و تجربه‌ای متفاوت داشته باشید.</p>
+      <a href="#services" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold transition">بیشتر بدانید</a>
+    </div>
+    <div>
+      <img loading="lazy" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="خوش آمدید" class="rounded-3xl shadow-lg" />
+    </div>
+  </div>
+</section>
+
+<section id="services" class="py-20 px-6 md:px-12 bg-white">
+  <div class="container mx-auto max-w-7xl text-center">
+    <h2 class="text-4xl font-extrabold text-green-700 mb-12">خدمات ما</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="bg-green-50 rounded-xl p-8 shadow-lg hover:shadow-2xl transition cursor-pointer">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="مشاوره" class="w-20 h-20 mx-auto mb-6" />
+        <h3 class="text-xl font-bold mb-4 text-green-800">مشاوره حرفه‌ای</h3>
+        <p class="text-green-700 leading-relaxed">تیم ما آماده ارائه مشاوره تخصصی و راه‌حل‌های مناسب برای نیازهای شما است.</p>
+      </div>
+
+      <div class="bg-green-50 rounded-xl p-8 shadow-lg hover:shadow-2xl transition cursor-pointer">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="طراحی" class="w-20 h-20 mx-auto mb-6" />
+        <h3 class="text-xl font-bold mb-4 text-green-800">طراحی مدرن</h3>
+        <p class="text-green-700 leading-relaxed">ما با استفاده از تکنولوژی‌های به‌روز، طراحی‌هایی زیبا و جذاب ارائه می‌کنیم.</p>
+      </div>
+
+      <div class="bg-green-50 rounded-xl p-8 shadow-lg hover:shadow-2xl transition cursor-pointer">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=600&q=80" alt="پشتیبانی" class="w-20 h-20 mx-auto mb-6" />
+        <h3 class="text-xl font-bold mb-4 text-green-800">پشتیبانی ۲۴ ساعته</h3>
+        <p class="text-green-700 leading-relaxed">تیم پشتیبانی ما در هر زمان آماده پاسخگویی به سوالات و مشکلات شماست.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="py-20 px-6 md:px-12 bg-green-50">
+  <div class="container mx-auto max-w-7xl">
+    <h2 class="text-4xl font-extrabold text-green-700 mb-12 text-center">گالری تصاویر</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="گالری1" class="rounded-xl shadow-md hover:scale-105 transition-transform cursor-pointer" />
+      <img loading="lazy" src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=800&q=80" alt="گالری2" class="rounded-xl shadow-md hover:scale-105 transition-transform cursor-pointer" />
+      <img loading="lazy" src="https://images.unsplash.com/photo-1526321549574-12a4d2dfe34b?auto=format&fit=crop&w=800&q=80" alt="گالری3" class="rounded-xl shadow-md hover:scale-105 transition-transform cursor-pointer" />
+      <img loading="lazy" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80" alt="گالری4" class="rounded-xl shadow-md hover:scale-105 transition-transform cursor-pointer" />
+      <img loading="lazy" src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80" alt="گالری5" class="rounded-xl shadow-md hover:scale-105 transition-transform cursor-pointer" />
+      <img loading="lazy" src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=800&q=80" alt="گالری6" class="rounded-xl shadow-md hover:scale-105 transition-transform cursor-pointer" />
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-20 px-6 md:px-12 bg-white">
+  <div class="container mx-auto max-w-md">
+    <h2 class="text-4xl font-extrabold text-green-700 mb-12 text-center">تماس با ما</h2>
+    <form action="#" method="POST" class="bg-green-50 rounded-lg shadow-lg p-8">
+      <label for="name" class="block mb-2 font-semibold text-green-800">نام کامل</label>
+      <input id="name" name="name" type="text" required class="w-full p-3 rounded-md border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-500 mb-6" placeholder="نام خود را وارد کنید" />
+
+      <label for="email" class="block mb-2 font-semibold text-green-800">ایمیل</label>
+      <input id="email" name="email" type="email" required class="w-full p-3 rounded-md border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-500 mb-6" placeholder="ایمیل خود را وارد کنید" />
+
+      <label for="message" class="block mb-2 font-semibold text-green-800">پیام</label>
+      <textarea id="message" name="message" rows="5" required class="w-full p-3 rounded-md border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-500 mb-6" placeholder="پیام خود را بنویسید"></textarea>
+
+      <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-lg transition">ارسال پیام</button>
+    </form>
+  </div>
+</section>
+
+<footer class="bg-green-700 text-green-200 py-8 mt-20">
+  <div class="container mx-auto text-center">
+    <p>© تمامی حقوق برای وب‌سایت ما محفوظ است. ۱۴۰۲</p>
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
