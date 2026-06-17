@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>وبسایت نمونه</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="fontiran bg-gray-100 text-gray-800">
+
+<!-- صفحه اصلی -->
+<header class="bg-white shadow">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <h1 class="text-2xl font-bold text-indigo-600">وبسایت نمونه</h1>
+    <nav class="space-x-4">
+      <a href="#home" class="hover:text-indigo-500 transition">خانه</a>
+      <a href="#about" class="hover:text-indigo-500 transition">درباره ما</a>
+      <a href="#services" class="hover:text-indigo-500 transition">خدمات</a>
+      <a href="#gallery" class="hover:text-indigo-500 transition">گالری</a>
+      <a href="#contact" class="hover:text-indigo-500 transition">تماس با ما</a>
+    </nav>
+  </div>
+</header>
+
+<!-- بنر اصلی -->
+<section id="home" class="relative bg-gray-200">
+  <img src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366?auto=format&fit=crop&w=1600&q=80" alt="بنر" class="w-full h-96 object-cover" />
+  <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <h2 class="text-4xl md:text-5xl font-bold text-white text-center px-4">به وبسایت من خوش آمدید</h2>
+  </div>
+</section>
+
+<!-- درباره ما -->
+<section id="about" class="max-w-7xl mx-auto px-4 py-12">
+  <h3 class="text-3xl font-semibold text-center text-indigo-600 mb-8">درباره ما</h3>
+  <div class="flex flex-col md:flex-row items-center md:space-x-8">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="درباره ما" class="w-full md:w-1/2 rounded-lg shadow-lg mb-6 md:mb-0" />
+    <div class="md:w-1/2 text-center md:text-right">
+      <p class="mb-4 text-gray-700">ما یک تیم متخصص و مجرب در حوزه توسعه وب هستیم که همیشه سعی می‌کنیم بهترین خدمات را به مشتریان مان ارائه دهیم. رضایت شما هدف اصلی ماست.</p>
+      <a href="#contact" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-500 transition">همین حالا تماس بگیرید</a>
+    </div>
+  </div>
+</section>
+
+<!-- خدمات -->
+<section id="services" class="bg-gray-50 py-12">
+  <div class="max-w-7xl mx-auto px-4">
+    <h3 class="text-3xl font-semibold text-center text-indigo-600 mb-8">خدمات ما</h3>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="طراحی وب" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" />
+        <h4 class="text-xl font-semibold mb-2">طراحی سایت</h4>
+        <p class="text-gray-600">طراحی سایت‌های ریسپانسیو و حرفه‌ای برای کسب‌وکار شما.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1524492433406-7ab0cc914149?auto=format&fit=crop&w=600&q=80" alt="برنامه نویسی" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" />
+        <h4 class="text-xl font-semibold mb-2">برنامه‌نویسی</h4>
+        <p class="text-gray-600">کد نویسی حرفه‌ای و توسعه نرم‌افزارهای اختصاصی.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="سئو" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" />
+        <h4 class="text-xl font-semibold mb-2">سئو و بازاریابی</h4>
+        <p class="text-gray-600">افزایش رتبه سایت شما در موتورهای جستجوگر و جذب مشتریان بیشتر.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- گالری -->
+<section id="gallery" class="max-w-7xl mx-auto px-4 py-12">
+  <h3 class="text-3xl font-semibold text-center text-indigo-600 mb-8">گالری تصاویر</h3>
+  <div class="grid md:grid-cols-3 gap-4">
+    <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&w=800&q=80" alt="گالری 1" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" />
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="گالری 2" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" />
+    <img src="https://images.unsplash.com/photo-1524492433406-7ab0cc914149?auto=format&fit=crop&w=800&q=80" alt="گالری 3" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" />
+    <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=800&q=80" alt="گالری 4" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" />
+    <img src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366?auto=format&fit=crop&w=800&q=80" alt="گالری 5" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" />
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="گالری 6" class="w-full h-64 object-cover rounded-lg shadow hover:scale-105 transition" />
+  </div>
+</section>
+
+<!-- تماس با ما -->
+<section id="contact" class="bg-gray-50 py-12">
+  <div class="max-w-7xl mx-auto px-4">
+    <h3 class="text-3xl font-semibold text-center text-indigo-600 mb-8">تماس با ما</h3>
+    <div class="flex flex-col md:flex-row md:space-x-8">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h4 class="text-xl font-semibold mb-4">اطلاعات تماس</h4>
+        <p class="mb-2"><strong>تلفن:</strong> ۰۲۱-۱۲۳۴۵۶۷۸</p>
+        <p class="mb-2"><strong>ایمیل:</strong> info@example.com</p>
+        <p class="mb-2"><strong>آدرس :</strong> تهران، خیابان ولیعصر، پلاک ۱۲۳</p>
+        <div class="mt-4 flex space-x-4">
+          <a href="#" class="text-indigo-600 hover:text-indigo-400 transition"><svg class="w-6 h-6 inline-block" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.015-.609 1.793-1.574 2.163-2.724-.95.564-2.005.974-3.127 1.195-.9-.959-2.178-1.555-3.594-1.555-2.717 0-4.924 2.209-4.924 4.924 0 .386.043.762.127 1.124-4.09-.205-7.719-2.165-10.148-5.144-.425.729-.666 1.577-.666 2.475 0 1.704.868 3.208 2.188 4.085-.805-.026-1.563-.247-2.229-.616-.055 1.924 1.342 3.734 3.084 4.127-.815.221-1.669.338-2.551.338-.625 0-1.232-.06-1.824-.174 1.935 6.036 7.545 10.42 14.2 10.537-5.196 4.068-11.739 6.5-18.857 6.5-1.226 0-2.444-.072-3.652-.213 6.346 4.074 13.917 6.448 21.927 6.448 26.312 0 40.661-21.781 40.661-40.661 0-.62-.014-1.237-.043-1.852 2.789-2.014 5.2-4.536 7.095-7.37z"></path></svg></a>
+          <a href="#" class="text-indigo-600 hover:text-indigo-400 transition"><svg class="w-6 h-6 inline-block" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.324v21.351c0 .733.592 1.324 1.324 1.324h21.351c.733 0 1.324-.592 1.324-1.324v-21.351c0-.733-.591-1.324-1.324-1.324zm-13.986 20.537h-3.273v-11.11h3.273v11.11zm-1.636-12.679c-.817 0-1.48-.664-1.48-1.49 0-.824.663-1.489 1.48-1.489s1.48.664 1.48 1.49c0 .824-.663 1.489-1.48 1.489zm13.984 12.679h-3.269v-5.397c0-1.286-.029-2.941-1.792-2.941-1.793 0-2.07 1.402-2.07 2.852v5.486h-3.273v-11.11h3.136v1.517h.046c.436-.81 1.502-1.665 3.085-1.665 3.296 0 3.906 2.17 3.906 4.987v6.271z"></path></svg></a>
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <form class="bg-white p-6 rounded-lg shadow space-y-4">
+          <div>
+            <label class="block mb-2 font-semibold" for="name">نام شما</label>
+            <input class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-300" type="text" id="name" placeholder="نام شما" />
+          </div>
+          <div>
+            <label class="block mb-2 font-semibold" for="email">ایمیل</label>
+            <input class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-300" type="email" id="email" placeholder="ایمیل شما" />
+          </div>
+          <div>
+            <label class="block mb-2 font-semibold" for="message">پیغام</label>
+            <textarea class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-300" id="message" rows="4" placeholder="پیغام خود را بنویسید"></textarea>
+          </div>
+          <button class="w-full bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-500 transition" type="submit">ارسال</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- پاورقی -->
+<footer class="bg-white border-t mt-12">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between text-gray-600 text-sm">
+    <p>&copy; 2023 وبسایت نمونه. همه حقوق محفوظ است.</p>
+    <div class="mt-2 md:mt-0 space-x-4 flex items-center">
+      <a href="#" class="hover:text-indigo-500 transition">سیاست حفظ حریم خصوصی</a>
+      <a href="#" class="hover:text-indigo-500 transition">شرایط و ضوابط</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
