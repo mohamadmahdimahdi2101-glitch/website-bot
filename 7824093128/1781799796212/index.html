@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ربات هوشمند چت فارسی</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-serif">
+
+  <!-- سربرگ -->
+  <header class="bg-blue-600 text-white p-6 relative overflow-hidden">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+      <h1 class="text-3xl font-bold">ربات چت هوشمند فارسی</h1>
+      <nav class="space-x-6 text-lg font-medium">
+        <a href="#about" class="hover:underline">درباره ما</a>
+        <a href="#features" class="hover:underline">ویژگی‌ها</a>
+        <a href="#contact" class="hover:underline">تماس با ما</a>
+      </nav>
+    </div>
+    <img src="https://images.unsplash.com/photo-1549887534-7c6808450485?auto=format&fit=crop&w=1600&q=80" alt="ربات چت"
+      class="absolute inset-0 w-full h-full object-cover opacity-20 z-0"/>
+  </header>
+
+  <!-- درباره ما -->
+  <section id="about" class="max-w-7xl mx-auto px-4 py-12 bg-white shadow-lg rounded-lg mt-8 relative z-10">
+    <div class="md:flex md:items-center md:gap-8">
+      <div class="md:w-1/2">
+        <h2 class="text-4xl font-bold mb-4 text-gray-800">چرا ربات چت هوشمند؟</h2>
+        <p class="text-gray-600 mb-4">این ربات با زبان فارسی هوشمندانه و دوستانه با کاربران شما گفتگو می‌کند، سوالات را پاسخ می‌دهد و تعامل طبیعی و مؤثر را فراهم می‌کند. طراحی شده برای وب‌سایت‌ها و اپلیکیشن‌های مدرن.</p>
+        <ul class="list-disc list-inside text-gray-600 space-y-2">
+          <li>پاسخگویی به سوالات کاربران</li>
+          <li>هماهنگی با درخواست‌های خاص</li>
+          <li>پاسخ به زبان فارسی طبیعی</li>
+        </ul>
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0">
+        <img src="https://source.unsplash.com/featured/800x600/?chatbot,farsi" alt="ربات چت فارسی" class="w-full h-auto rounded-lg shadow-lg"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ویژگی‌ها -->
+  <section id="features" class="max-w-7xl mx-auto px-4 py-12 bg-gray-50 mt-8 relative z-10 rounded-lg shadow-lg">
+    <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">ویژگی‌های ربات</h2>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition duration-300">
+        <img src="https://source.unsplash.com/featured/400x300/?artificial-intelligence,technology" alt="هوش مصنوعی" class="mx-auto mb-4 rounded-full w-24 h-24 object-cover"/>
+        <h3 class="text-xl font-semibold mb-2 text-gray-700">هوش مصنوعی پیشرفته</h3>
+        <p class="text-gray-600">موتور هوشمند و یادگیری عمیق برای پاسخ‌های طبیعی و مرتبط.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition duration-300">
+        <img src="https://source.unsplash.com/featured/400x300/?language,persian" alt="پشتیبانی فارسی" class="mx-auto mb-4 rounded-full w-24 h-24 object-cover"/>
+        <h3 class="text-xl font-semibold mb-2 text-gray-700">پاسخ به زبان فارسی</h3>
+        <p class="text-gray-600">درک عمیق و طبیعی برای ارتباط موثر به زبان فارسی.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition duration-300">
+        <img src="https://source.unsplash.com/featured/400x300/?cloud,api" alt="یکپارچگی آسان" class="mx-auto mb-4 rounded-full w-24 h-24 object-cover"/>
+        <h3 class="text-xl font-semibold mb-2 text-gray-700">سرویس‌های قابل ادغام</h3>
+        <p class="text-gray-600">کدهای قابل ادغام با وب‌سایت و اپلیکیشن شما بدون زحمت.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- نمونه تعامل -->
+  <section id="demo" class="max-w-7xl mx-auto px-4 py-12 mt-8">
+    <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">نمونه گفتگوی هوشمند</h2>
+    <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg relative z-10">
+      <div class="h-80 overflow-y-auto mb-4 p-4 border border-gray-200 rounded-lg" id="chat-box">
+        <div class="mb-4">
+          <div class="bg-gray-200 inline-block px-3 py-2 rounded-lg text-gray-800">سلام! من ربات چت هوشمند شما هستم. چطور می‌توانم کمکتان کنم؟</div>
+        </div>
+        <div class="mb-4 text-right">
+          <div class="bg-blue-500 text-white inline-block px-3 py-2 rounded-lg">سلام! درباره خدمات شما چیست؟</div>
+        </div>
+        <div class="mb-4">
+          <div class="bg-gray-200 inline-block px-3 py-2 rounded-lg text-gray-800">ما یک ربات پاسخگو هوشمند با زبان فارسی هستیم که می‌تواند سوالات شما را پاسخ دهد و با سایت شما متحد شود.</div>
+        </div>
+      </div>
+      <div class="flex space-x-2">
+        <input type="text" placeholder="پرسش شما..." class="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" id="user-input"/>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300" onclick="sendMessage()">ارسال</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- تماس با ما -->
+  <section id="contact" class="max-w-7xl mx-auto px-4 py-12 bg-gray-50 rounded-lg shadow-lg mb-8 mt-8 relative z-10">
+    <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">ارتباط با ما</h2>
+    <div class="md:flex md:space-x-8">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h3 class="text-2xl font-semibold mb-4 text-gray-700">آدرس</h3>
+        <p class="text-gray-600 mb-4">تهران، خیابان آزادی، میدان آزادی، پلاک ۱۲۳</p>
+        <h3 class="text-2xl font-semibold mb-4 text-gray-700">تلفن</h3>
+        <p class="text-gray-600 mb-4">+۹۸ ۱۲۳ ۴۵۶ ۷۸۹</p>
+        <h3 class="text-2xl font-semibold mb-4 text-gray-700">ایمیل</h3>
+        <p class="text-gray-600">info@robathoshmand.ir</p>
+      </div>
+      <div class="md:w-1/2">
+        <img src="https://source.unsplash.com/featured/800x600/?contact,office" alt="دفتر کار" class="w-full h-auto rounded-lg shadow-lg"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- پاورقی -->
+  <footer class="bg-gray-800 text-white p-4 text-center mt-8 relative z-10">
+    <p>&copy; 2023 ربات چت هوشمند فارسی. همه حقوق محفوظ است.</p>
+  </footer>
+
+  <script>
+    const chatBox = document.getElementById('chat-box');
+    const userInput = document.getElementById('user-input');
+
+    function sendMessage() {
+      const msg = userInput.value.trim();
+      if (!msg) return;
+      // افزودن پیام کاربر
+      const userMsgDiv = document.createElement('div');
+      userMsgDiv.className = 'mb-4 text-right';
+      userMsgDiv.innerHTML = '<div class="bg-blue-500 text-white inline-block px-3 py-2 rounded-lg">' + msg + '</div>';
+      chatBox.appendChild(userMsgDiv);
+      chatBox.scrollTop = chatBox.scrollHeight;
+      userInput.value = '';
+
+      // پاسخ نمونه
+      setTimeout(() => {
+        const botReplyDiv = document.createElement('div');
+        botReplyDiv.className = 'mb-4';
+        botReplyDiv.innerHTML = '<div class="bg-gray-200 inline-block px-3 py-2 rounded-lg text-gray-800">در حال حاضر پاسخ خودکار فعال نیست، لطفاً بعداً دوباره تلاش کنید.</div>';
+        chatBox.appendChild(botReplyDiv);
+        chatBox.scrollTop = chatBox.scrollHeight;
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
