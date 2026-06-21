@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>دیجی‌کالا - فروشگاه اینترنتی</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary-bg: #0b0f19;
+      --secondary-bg: #161f30;
+      --accent-cyan: #00f2fe;
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+    }
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--primary-bg);
+      color: var(--text-primary);
+      direction: rtl;
+      min-height: 100vh;
+    }
+    a {color: var(--accent-cyan); text-decoration:none; transition: color 0.3s;}
+    a:hover {color: var(--text-primary);}
+  </style>
+</head>
+<body>
+
+<!-- نوار بالا -->
+<header class="sticky top-0 flex items-center justify-between bg-[rgba(11,15,25,0.85)] backdrop-blur-md p-4 z-50">
+  <div class="font-bold text-xl text-cyan-400">دیجی‌کالا</div>
+  <nav class="flex gap-4 font-semibold text-sm text-gray-300">
+    <a href="#">خانه</a>
+    <a href="#">دسته‌بندی‌ها</a>
+    <a href="#">تخفیف‌ها</a>
+    <a href="#">پرفروش‌ها</a>
+    <a href="#">تماس با ما</a>
+  </nav>
+  <button class="bg-cyan-400 text-primary px-4 py-2 rounded-full font-semibold hover:bg-cyan-500 transition">ورود / ثبت‌نام</button>
+</header>
+
+<!-- نوار جستجو -->
+<section class="p-4 bg-secondary-bg flex justify-center">
+  <input type="search" placeholder="جستجوی کالا، برند و دسته..." class="w-full max-w-3xl p-3 rounded-full bg-[#2b3244] text-white outline-none placeholder-gray-400" />
+</section>
+
+<!-- بخش بنر/اسلایدر -->
+<section class="max-w-7xl mx-auto my-8 px-4">
+  <div class="flex flex-col md:flex-row items-center bg-secondary-bg rounded-xl p-6 shadow-lg">
+    <div class="flex-1 mb-4 md:mb-0 md:mr-6">
+      <h1 class="text-3xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500 mb-4">خرید آسان و سریع با بهترین قیمت‌ها در دیجی‌کالا</h1>
+      <p class="mb-6 text-gray-400">تنوع بسیار زیاد کالاها در دسته‌بندی‌های مختلف، ارسال سریع، و خدمات پس از فروش معتبر</p>
+      <div class="flex gap-4">
+        <button class="bg-cyan-400 text-primary font-semibold px-6 py-3 rounded-full hover:bg-cyan-500 transition">مشاهده پیشنهادها</button>
+        <button class="border-2 border-cyan-400 text-cyan-400 font-semibold px-6 py-3 rounded-full hover:bg-cyan-400 hover:text-white transition">راهنمای خرید</button>
+      </div>
+    </div>
+    <div class="flex-1 flex items-center justify-center bg-primary rounded-xl shadow-lg h-64 md:h-auto">
+      <img src="https://images.unsplash.com/photo-1610577277617-9f334d85e1e4?auto=format&fit=crop&w=800&q=80" class="rounded-xl w-full h-full object-cover" alt="بنر" />
+    </div>
+  </div>
+</section>
+
+<!-- دسته‌بندی‌های محبوب -->
+<section class="max-w-7xl mx-auto my-8 px-4">
+  <h2 class="text-2xl font-extrabold mb-6 text-cyan-400">دسته‌بندی‌های محبوب</h2>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="bg-secondary-bg rounded-xl p-4 flex flex-col items-center hover:scale-105 transform transition-shadow shadow-md cursor-pointer">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=100&q=80" class="w-20 mb-2" alt="موبایل" />
+      <span class="font-semibold text-sm text-white">موبایل</span>
+    </div>
+    <div class="bg-secondary-bg rounded-xl p-4 flex flex-col items-center hover:scale-105 transform transition-shadow shadow-md cursor-pointer">
+      <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=100&q=80" class="w-20 mb-2" alt="لپ‌تاپ" />
+      <span class="font-semibold text-sm text-white">لپ‌تاپ</span>
+    </div>
+    <div class="bg-secondary-bg rounded-xl p-4 flex flex-col items-center hover:scale-105 transform transition-shadow shadow-md cursor-pointer">
+      <img src="https://images.unsplash.com/photo-1556767576-5a1dc84f8927?auto=format&fit=crop&w=100&q=80" class="w-20 mb-2" alt="پوشاک" />
+      <span class="font-semibold text-sm text-white">پوشاک</span>
+    </div>
+    <div class="bg-secondary-bg rounded-xl p-4 flex flex-col items-center hover:scale-105 transform transition-shadow shadow-md cursor-pointer">
+      <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=100&q=80" class="w-20 mb-2" alt="خانه و آشپزخانه" />
+      <span class="font-semibold text-sm text-white">خانه و آشپزخانه</span>
+    </div>
+  </div>
+</section>
+
+<!-- محصولات محبوب -->
+<section class="max-w-7xl mx-auto my-8 px-4">
+  <h2 class="text-2xl font-extrabold mb-6 text-purple-500">پرفروش‌ترین‌ها</h2>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <!-- محصول ۱ -->
+    <div class="bg-secondary-bg rounded-xl p-4 flex flex-col cursor-pointer hover:shadow-xl transition shadow-md">
+      <img src="https://source.unsplash.com/featured/?smartphone" class="w-full h-40 object-contain mb-3 rounded-xl" alt="گوشی"/>
+      <div class="font-semibold mb-2 line-clamp-2 text-white">گوشی هوشمند سامسونگ مدل Galaxy A52</div>
+      <div class="text-cyan-400 font-bold mb-1">۱۲,۵۰۰,۰۰۰ تومان</div>
+      <div class="line-through text-gray-500 text-sm mb-1">۱۳,۵۰۰,۰۰۰ تومان</div>
+      <div class="text-yellow-400 text-sm">★★★★☆</div>
+    </div>
+    <!-- محصول ۲ -->
+    <div class="bg-secondary-bg rounded-xl p-4 flex flex-col cursor-pointer hover:shadow-xl transition shadow-md">
+      <img src="https://source.unsplash.com/featured/?laptop" class="w-full h-40 object-contain mb-3 rounded-xl" alt="لپ‌تاپ"/>
+      <div class="font-semibold mb-2 line-clamp-2 text-white">لپ‌تاپ مک‌بوک ایر ۱۳ اینچ</div>
+      <div class="text-cyan-400 font-bold mb-1">۳۵,۰۰۰,۰۰۰ تومان</div>
+      <div class="line-through text-gray-500 text-sm mb-1">—</div>
+      <div class="text-yellow-400 text-sm">★★★★★</div>
+    </div>
+    <!-- محصول ۳ -->
+    <div class="bg-secondary-bg rounded-xl p-4 flex flex-col cursor-pointer hover:shadow-xl transition shadow-md">
+      <img src="https://source.unsplash.com/featured/?shoes" class="w-full h-40 object-contain mb-3 rounded-xl" alt="کفش"/>
+      <div class="font-semibold mb-2 line-clamp-2 text-white">کفش ورزشی نایک مدل Air Max</div>
+      <div class="text-cyan-400 font-bold mb-1">۲,۵۰۰,۰۰۰ تومان</div>
+      <div class="line-through text-gray-500 text-sm mb-1">۳,۰۰۰,۰۰۰ تومان</div>
+      <div class="text-yellow-400 text-sm">★★★★☆</div>
+    </div>
+    <!-- محصول ۴ -->
+    <div class="bg-secondary-bg rounded-xl p-4 flex flex-col cursor-pointer hover:shadow-xl transition shadow-md">
+      <img src="https://source.unsplash.com/featured/?kitchen" class="w-full h-40 object-contain mb-3 rounded-xl" alt="کتری"/>
+      <div class="font-semibold mb-2 line-clamp-2 text-white">کتری برقی فیلیپس مدل HD4646</div>
+      <div class="text-cyan-400 font-bold mb-1">۹۰۰,۰۰۰ تومان</div>
+      <div class="line-through text-gray-500 text-sm mb-1">۱,۰۰۰,۰۰۰ تومان</div>
+      <div class="text-yellow-400 text-sm">★★★★☆</div>
+    </div>
+  </div>
+</section>
+
+<!-- فوتر -->
+<footer class="bg-secondary-bg p-6 text-center text-gray-400 text-sm mt-12">
+  تمامی حقوق این سایت متعلق به شماست | طراحی شده با ❤️ توسط شما
+</footer>
+
+</body>
+</html>
