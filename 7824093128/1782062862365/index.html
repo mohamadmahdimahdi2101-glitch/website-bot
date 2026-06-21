@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>فروشگاه سجاد | فرش‌های دست‌بافت و لوکس</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font=fa Sans text-gray-700 bg-white">
+
+<!-- هدر -->
+<header class="sticky top-0 backdrop-blur-md bg-white/70 backdrop-saturate-150 shadow-lg z-50 px-6 py-4 flex justify-between items-center transition duration-300">
+  <div class="font-bold text-xl text-[#6B4226]">سجاد</div>
+  <nav class="hidden md:flex space-x-6 text-[#6B4226] font-semibold">
+    <a href="#" class="hover:text-[#B1742D] transition">خانه</a>
+    <a href="#products" class="hover:text-[#B1742D] transition">محصولات</a>
+    <a href="#about" class="hover:text-[#B1742D] transition">درباره ما</a>
+    <a href="#contact" class="hover:text-[#B1742D] transition">تماس با ما</a>
+  </nav>
+  <div class="flex items-center space-x-4">
+    <button class="hidden md:inline-block bg-[#6B4226] text-white px-4 py-2 rounded-lg hover:bg-[#A0522D] transition">سبد خرید</button>
+    <button class="md:hidden text-[#6B4226] focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="#6B4226" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m13-9l2 9m-5 4a2 2 0 100-4 2 2 0 000 4zm-8 0a2 2 0 100-4 2 2 0 000 4z"></path></svg></button>
+  </div>
+</header>
+
+<!-- بخش hero -->
+<section class="relative flex flex-col md:flex-row items-center justify-between px-6 py-16 bg-[#FAF3E0] overflow-hidden">
+  <div class="max-w-2xl z-10">
+    <h1 class="text-4xl md:text-5xl font-bold text-[#6B4226] mb-4 text-center md:text-right">زیبایی و اصالت با محصولات دست‌بافت سجاد</h1>
+    <p class="text-lg text-[#8C6D5B] mb-6 text-center md:text-right">فرش‌های دستبافت، به سبک سنتی و کیفیت بی‌همتا</p>
+    <div class="flex justify-center md:justify-end gap-4">
+      <a href="#products" class="bg-[#B1742D] hover:bg-[#D19F65] text-white px-6 py-3 rounded-lg font-semibold transition">مشاهده محصولات</a>
+      <a href="#order" class="border-2 border-[#B1742D] text-[#B1742D] px-6 py-3 rounded-lg font-semibold hover:bg-[#B1742D] hover:text-white transition">ثبت سفارش</a>
+    </div>
+  </div>
+  <div class="mt-8 md:mt-0 max-w-xl w-full z-10">
+    <img src="https://images.unsplash.com/photo-1620306259594-4a0e64bc8d41?auto=format&fit=crop&w=800&q=80" alt="فرش دست‌بافت" class="w-full rounded-xl shadow-lg" />
+  </div>
+  <!-- الماسکادر تلائی در پس زمینه -->
+  <div class="absolute inset-0 bg-gradient-to-tr from-[#FFD700]/20 via-[#B87333]/10 to-[#8B0000]/10 pointer-events-none"></div>
+</section>
+
+<!-- دسته‌بندی محصولات -->
+<section id="categories" class="py-16 px-6 bg-white">
+  <h2 class="text-3xl font-bold text-center text-[#6B4226] mb-12">دسته‌بندی محصولات</h2>
+  <div class="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+    <div class="flex flex-col items-center text-center space-y-4 hover:scale-105 transition transform cursor-pointer">
+      <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=400&q=80" alt="فرش دستبافت" class="w-24 h-24 object-cover rounded-lg shadow-md">
+      <h3 class="text-xl font-semibold text-[#6B4226]">فرش‌های دست‌بافته</h3>
+      <p class="text-[#8C6D5B] text-sm">فرش‌هایی با هنر و اصالت ایرانی</p>
+    </div>
+    <div class="flex flex-col items-center text-center space-y-4 hover:scale-105 transition transform cursor-pointer">
+      <img src="https://images.unsplash.com/photo-1614909191824-3e1e04da0932?auto=format&fit=crop&w=400&q=80" alt="زیرانداز" class="w-24 h-24 object-cover rounded-lg shadow-md">
+      <h3 class="text-xl font-semibold text-[#6B4226]">زیرانداز</h3>
+      <p class="text-[#8C6D5B] text-sm">برای کوچه و صندلی و وسایل تزیینی</p>
+    </div>
+    <div class="flex flex-col items-center text-center space-y-4 hover:scale-105 transition transform cursor-pointer">
+      <img src="https://images.unsplash.com/photo-1607797229037-5400b6f385f7?auto=format&fit=crop&w=400&q=80" alt="گلیم" class="w-24 h-24 object-cover rounded-lg shadow-md">
+      <h3 class="text-xl font-semibold text-[#6B4226]">گلیم</h3>
+      <p class="text-[#8C6D5B] text-sm">چیدمان سنتی و سبک</p>
+    </div>
+    <div class="flex flex-col items-center text-center space-y-4 hover:scale-105 transition transform cursor-pointer">
+      <img src="https://images.unsplash.com/photo-1603592412280-25dd0b31d234?auto=format&fit=crop&w=400&q=80" alt="تابلو فرش" class="w-24 h-24 object-cover rounded-lg shadow-md">
+      <h3 class="text-xl font-semibold text-[#6B4226]">تابلو فرش</h3>
+      <p class="text-[#8C6D5B] text-sm">کلاژ تصاویر و هنر معاصر</p>
+    </div>
+  </div>
+</section>
+
+<!-- محصولات پیشنهادی / پر فروش -->
+<section id="products" class="py-16 px-6 bg-[#FAF3E0]">
+  <h2 class="text-3xl font-bold text-center text-[#6B4226] mb-12">محصولات پر فروش</h2>
+  <div class="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+    <!-- محصول 1 -->
+    <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center hover:shadow-2xl transition duration-300">
+      <img src="https://images.unsplash.com/photo-1600093061118-17d311f01d78?auto=format&fit=crop&w=600&q=80" alt="فرش دستبافت" class="w-full h-48 object-cover rounded-lg mb-4"/>
+      <h3 class="font-semibold text-[#6B4226] mb-2">فرش دست‌باف تبریز</h3>
+      <p class="text-[#8C6D5B] mb-4">قیمت: ۱۵ میلیون تومان</p>
+      <button class="w-full bg-[#B1742D] hover:bg-[#D19F65] text-white px-4 py-2 rounded-lg transition">افزودن به سبد</button>
+    </div>
+    <!-- محصول 2 -->
+    <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center hover:shadow-2xl transition duration-300">
+      <img src="https://images.unsplash.com/photo-1549887534-7c680844a41b?auto=format&fit=crop&w=600&q=80" alt="زیرانداز بومی" class="w-full h-48 object-cover rounded-lg mb-4"/>
+      <h3 class="font-semibold text-[#6B4226] mb-2">زیرانداز و سنتی</h3>
+      <p class="text-[#8C6D5B] mb-4">قیمت: ۳ میلیون تومان</p>
+      <button class="w-full bg-[#B1742D] hover:bg-[#D19F65] text-white px-4 py-2 rounded-lg transition">افزودن به سبد</button>
+    </div>
+    <!-- محصول 3 -->
+    <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center hover:shadow-2xl transition duration-300">
+      <img src="https://images.unsplash.com/photo-1573824649392-230c930d3296?auto=format&fit=crop&w=600&q=80" alt="گلیم رنگارنگ" class="w-full h-48 object-cover rounded-lg mb-4"/>
+      <h3 class="font-semibold text-[#6B4226] mb-2">گلیم سنتی</h3>
+      <p class="text-[#8C6D5B] mb-4">قیمت: ۵ میلیون تومان</p>
+      <button class="w-full bg-[#B1742D] hover:bg-[#D19F65] text-white px-4 py-2 rounded-lg transition">افزودن به سبد</button>
+    </div>
+    <!-- محصول 4 -->
+    <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center hover:shadow-2xl transition duration-300">
+      <img src="https://images.unsplash.com/photo-1619754523828-565a3a980dcb?auto=format&fit=crop&w=600&q=80" alt="تابلو فرش مدرن" class="w-full h-48 object-cover rounded-lg mb-4"/>
+      <h3 class="font-semibold text-[#6B4226] mb-2">تابلو فرش مدرن</h3>
+      <p class="text-[#8C6D5B] mb-4">قیمت: ۷ میلیون تومان</p>
+      <button class="w-full bg-[#B1742D] hover:bg-[#D19F65] text-white px-4 py-2 rounded-lg transition">افزودن به سبد</button>
+    </div>
+  </div>
+</section>
+
+<!-- درباره ما -->
+<section id="about" class="py-16 px-6 bg-white">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-[#6B4226] mb-8">درباره سجاد</h2>
+    <p class="text-[#8C6D5B] mb-6">سجاد برندی است ایرانی با سابقه بیش از ۳۰ سال در تولید و عرضه فرش‌های دست‌بافت اصیل و هنر اصیل ایرانی. هدف ما حفظ هنر سنتی و ارائه محصولات باکیفیت و منحصر به فرد است.</p>
+    <div class="grid md:grid-cols-2 gap-4">
+      <img src="https://images.unsplash.com/photo-1535403036578-ec6930f72fb7?auto=format&fit=crop&w=800&q=80" alt="کارگاه فرشبافی" class="w-full rounded-lg shadow-md" />
+      <img src="https://images.unsplash.com/photo-1579161395073-070709161ea8?auto=format&fit=crop&w=800&q=80" alt="کارگران هنرمند" class="w-full rounded-lg shadow-md" />
+    </div>
+  </div>
+</section>
+
+<!-- نظرات مشتریان -->
+<section id="testimonials" class="py-16 px-6 bg-[#FAF3E0]">
+  <h2 class="text-3xl font-bold text-center text-[#6B4226] mb-12">نظرات مشتریان</h2>
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+    <!-- نظر اول -->
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition duration-300 flex flex-col items-center">
+      <img src="https://images.unsplash.com/photo-1577507365952-6defb174125d?auto=format&fit=crop&w=100&q=80" alt="مشتری" class="w-16 h-16 rounded-full mb-4"/>
+      <p class="text-[#8C6D5B] mb-4 text-center">"فرش‌های سجاد واقعاً با هنر و دقت ساخته شده‌اند. از خرید راضیم."</p>
+      <h4 class="text-xl font-semibold text-[#6B4226]">علی حسن‌زاد</h4>
+    </div>
+    <!-- نظر دوم -->
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition duration-300 flex flex-col items-center">
+      <img src="https://images.unsplash.com/photo-1575334554021-e107b17b7a73?auto=format&fit=crop&w=100&q=80" alt="مشتری" class="w-16 h-16 rounded-full mb-4"/>
+      <p class="text-[#8C6D5B] mb-4 text-center">"کالای باکیفیت و طراحی سنتی، دقیقا همان چیزی که می‌خواستم."</p>
+      <h4 class="text-xl font-semibold text-[#6B4226]">مریم رضایی</h4>
+    </div>
+    <!-- نظر سوم -->
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition duration-300 flex flex-col items-center">
+      <img src="https://images.unsplash.com/photo-1547335180-727a7f5a437b?auto=format&fit=crop&w=100&q=80" alt="مشتری" class="w-16 h-16 rounded-full mb-4"/>
+      <p class="text-[#8C6D5B] mb-4 text-center">"فرش‌های زیبا و مقاوم، کار هنرمندان ایرانی."</p>
+      <h4 class="text-xl font-semibold text-[#6B4226]">نورالدین احمدی</h4>
+    </div>
+  </div>
+</section>
+
+<!-- تماس با ما -->
+<section id="contact" class="py-16 px-6 bg-white">
+  <div class="max-w-4xl mx-auto text-center mb-10">
+    <h2 class="text-3xl font-bold text-[#6B4226] mb-4"> تماس با ما</h2>
+    <p class="text-[#8C6D5B] mb-6">برای اطلاع از قیمت‌ها، سفارش و سوالات دیگر، با ما در تماس باشید.</p>
+    <div class="flex flex-col md:flex-row gap-4 justify-center mb-8">
+      <div class="flex items-center space-x-4">
+        <svg class="w-6 h-6 text-[#6B4226]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v4l-7 4-7-4V5z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M4 10v10h16V10"></path></svg>
+        <span class="text-[#6B4226]">تهران، خیابان ولیعصر، خیابان سجاد، شماره ۱۲</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <svg class="w-6 h-6 text-[#6B4226]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8V6a2 2 0 012-2h14a2 2 0 012 2v2"></path><path stroke-linecap="round" stroke-linejoin="round" d="M19 12a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        <span class="text-[#6B4226]">info@sajad.com</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <svg class="w-6 h-6 text-[#6B4226]" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 3h8.5A4.75 4.75 0 0121 7.75v8.5A4.75 4.75 0 0116.25 21h-8.5A4.75 4.75 0 013 16.25v-8.5A4.75 4.75 0 017.75 3zm0 2a2.75 2.75 0 00-2.75 2.75v8.5A2.75 2.75 0 007.75 19h8.5a2.75 2.75 0 002.75-2.75v-8.5A2.75 2.75 0 0016.25 7h-8.5z"></path></svg>
+        <span class="text-[#6B4226]">021-12345678</span>
+      </div>
+    </div>
+  </div>
+  <!-- فرم تماس -->
+  <form class="max-w-2xl mx-auto bg-gray-100 p-8 rounded-lg space-y-4 shadow-md" id="order">
+    <div class="flex flex-col md:flex-row gap-4">
+      <input type="text" placeholder="نام" class="border rounded p-3 flex-1 focus:outline-none focus:ring-2 focus:ring-[#B1742D]" />
+      <input type="email" placeholder="ایمیل" class="border rounded p-3 flex-1 focus:outline-none focus:ring-2 focus:ring-[#B1742D]" />
+    </div>
+    <input type="text" placeholder="موضوع" class="w-full border rounded p-3 focus:outline-none focus:ring-2 focus:ring-[#B1742D]" />
+    <textarea placeholder="پیام شما" rows="4" class="w-full border rounded p-3 focus:outline-none focus:ring-2 focus:ring-[#B1742D]"></textarea>
+    <button type="submit" class="bg-[#B1742D] hover:bg-[#D19F65] text-white px-6 py-3 rounded-lg font-semibold transition">ارسال پیام</button>
+  </form>
+</section>
+
+<!-- فوتر -->
+<footer class="bg-gray-100 px-6 py-8 mt-16 border-t border-gray-300">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+    <div class="mb-4 md:mb-0 text-[#6B4226]">
+      <h3 class="font-semibold mb-2">لینک‌های مهم</h3>
+      <ul class="space-y-1 text-sm">
+        <li><a href="#about" class="hover:text-[#B1742D] transition">درباره ما</a></li>
+        <li><a href="#terms" class="hover:text-[#B1742D] transition">شرایط استفاده</a></li>
+        <li><a href="#privacy" class="hover:text-[#B1742D] transition">حریم خصوصی</a></li>
+      </ul>
+    </div>
+    <div class="mb-4 md:mb-0 text-[#6B4226]">
+      <h3 class="font-semibold mb-2">ارتباط با ما</h3>
+      <p>تلفن: 021-12345678</p>
+      <p>ایمیل: info@sajad.com</p>
+      <div class="flex space-x-4 mt-2">
+        <a href="#" class="text-[#6B4226] hover:text-[#B1742D]"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0A5 5 0 0124 5v14a5 5 0 01-5 5H5a5 5 0 01-5-5V5A5 5 0 015 0h14zm-4 19c0 1.1-.9 2-2 2s-2-.9-2-2 2-2 2-2 2 .9 2 2z"></path></svg></a>
+        <a href="#" class="text-[#6B4226] hover:text-[#B1742D]"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.5 12c0-1.868-.532-3.632-1.45-5.166l-2.781.932a6.734 6.734 0 012.275 4.235c0 3.729-3.020 6.749-6.749 6.749a6.736 6.736 0 01-4.236-2.275l-.932 2.781A9.962 9.962 0 0022.5 12zm-9.75 0a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z"></path></svg></a>
+      </div>
+    </div>
+    <div class="mt-4 md:mt-0 text-center md:text-left text-[#6B4226]">
+      <p class="text-sm">&copy; 2023 سجاد. همه حقوق محفوظ است.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
