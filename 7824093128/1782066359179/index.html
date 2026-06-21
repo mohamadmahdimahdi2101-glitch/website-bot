@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>وب‌سایت نمونه</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font Sans-serif bg-gray-50 text-gray-800">
+
+<!-- هدر -->
+<header class="bg-white shadow">
+  <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <h1 class="text-2xl font-bold text-indigo-600">وب‌سایت نمونه</h1>
+    <nav class="space-x-4">
+      <a href="#home" class="text-gray-700 hover:text-indigo-600">خانه</a>
+      <a href="#about" class="text-gray-700 hover:text-indigo-600">درباره ما</a>
+      <a href="#services" class="text-gray-700 hover:text-indigo-600">خدمات</a>
+      <a href="#gallery" class="text-gray-700 hover:text-indigo-600">گالری</a>
+      <a href="#contact" class="text-gray-700 hover:text-indigo-600">تماس با ما</a>
+    </nav>
+  </div>
+</header>
+
+<!-- بخش Hero -->
+<section id="home" class="bg-gray-100 py-16">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2 mb-8 md:mb-0">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">به وب‌سایت حرفه‌ای ما خوش آمدید</h2>
+      <p class="text-lg text-gray-600 mb-6">ما بهترین خدمات را در حوزه طراحی وب و توسعه ارائه می‌دهیم تا کسب‌وکار شما را به اوج برسانیم.</p>
+      <a href="#contact" class="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-500 transition">همین حالا تماس بگیرید</a>
+    </div>
+    <div class="md:w-1/2">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="تصویر اولیه" class="rounded-lg shadow-lg" />
+    </div>
+  </div>
+</section>
+
+<!-- درباره ما -->
+<section id="about" class="py-16 bg-white">
+  <div class="container mx-auto px-4 text-center md:text-right">
+    <h3 class="text-3xl font-bold text-gray-800 mb-4">درباره ما</h3>
+    <p class="text-gray-600 mb-8 max-w-3xl mx-auto">ما تیمی متعهد به ارائه بهترین راهکارهای طراحی و توسعه وب هستیم. هدف ما رضایت کامل مشتریان و خلق پروژه‌های منحصر به فرد است.</p>
+    <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=800&q=80" alt="درباره ما" class="mx-auto rounded-lg shadow-lg" />
+  </div>
+</section>
+
+<!-- خدمات -->
+<section id="services" class="py-16">
+  <div class="container mx-auto px-4 text-center">
+    <h3 class="text-3xl font-bold text-gray-800 mb-8">خدمات ما</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-lg shadow p-6 hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="طراحی وب" class="w-full h-48 object-cover rounded mb-4" />
+        <h4 class="text-xl font-semibold mb-2">طراحی وب حرفه‌ای</h4>
+        <p class="text-gray-600">طراحی سایت‌های ریسپانسیو و زیبا با بهترین استانداردهای روز دنیا.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6 hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=400&q=80" alt="توسعه وب" class="w-full h-48 object-cover rounded mb-4" />
+        <h4 class="text-xl font-semibold mb-2">توسعه و برنامه‌نویسی</h4>
+        <p class="text-gray-600">راه حل‌های منحصربه‌فرد برای توسعه وبسایت‌های پویا و کاربردی.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6 hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1646195753703-0d6f9a8f051d?auto=format&fit=crop&w=400&q=80" alt="بازاریابی دیجیتال" class="w-full h-48 object-cover rounded mb-4" />
+        <h4 class="text-xl font-semibold mb-2">بازاریابی اینترنتی</h4>
+        <p class="text-gray-600">ترویج برند شما در فضای مجازی با کمپین‌های حرفه‌ای و هدفمند.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- گالری تصاویر -->
+<section id="gallery" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4 text-center">
+    <h3 class="text-3xl font-bold text-gray-800 mb-8">گالری نمونه کارها</h3>
+    <div class="grid md:grid-cols-4 gap-4">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="نمونه کار 1" class="rounded-lg shadow hover:scale-105 transition" />
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=80" alt="نمونه کار 2" class="rounded-lg shadow hover:scale-105 transition" />
+      <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=600&q=80" alt="نمونه کار 3" class="rounded-lg shadow hover:scale-105 transition" />
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="نمونه کار 4" class="rounded-lg shadow hover:scale-105 transition" />
+    </div>
+  </div>
+</section>
+
+<!-- تماس با ما -->
+<section id="contact" class="py-16">
+  <div class="container mx-auto px-4 md:flex md:space-x-8">
+    <div class="md:w-1/2 mb-8 md:mb-0">
+      <h3 class="text-3xl font-bold text-gray-800 mb-4">با ما در ارتباط باشید</h3>
+      <p class="text-gray-600 mb-4">برای دریافت مشاوره رایگان یا همکاری، فرم زیر را پر کنید یا با شماره تلفن زیر تماس بگیرید.</p>
+      <ul class="text-gray-600">
+        <li class="mb-2">تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</li>
+        <li class="mb-2">ایمیل: info@website.com</li>
+        <li>آدرس: تهران، خیابان نمونه، ساختمان نمونه</li>
+      </ul>
+    </div>
+    <div class="md:w-1/2">
+      <form class="bg-white p-6 rounded-lg shadow space-y-4" action="#" method="POST">
+        <div>
+          <label class="block mb-2 font-semibold" for="name">نام و نام خانوادگی</label>
+          <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-300" required />
+        </div>
+        <div>
+          <label class="block mb-2 font-semibold" for="email">ایمیل</label>
+          <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-300" required />
+        </div>
+        <div>
+          <label class="block mb-2 font-semibold" for="message">پیغام</label>
+          <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-300" required></textarea>
+        </div>
+        <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-500 transition">ارسال پیام</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- پاورقی -->
+<footer class="bg-white border-t mt-8">
+  <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between text-gray-600 text-sm">
+    <p>&copy; 2023 تمامی حقوق محفوظ است.</p>
+    <div class="mt-2 md:mt-0 space-x-4">
+      <a href="#" class="hover:text-indigo-600">حریم خصوصی</a>
+      <a href="#" class="hover:text-indigo-600">قوانین و مقررات</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
