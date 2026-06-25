@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>سایت نمونه فارسی</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-vazir bg-gray-100 text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-white shadow-lg sticky top-0 z-50">
+  <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <h1 class="text-2xl font-bold text-indigo-600">سایت نمونه فارسی</h1>
+    <nav class="space-x-6 hidden md:flex">
+      <a href="#home" class="text-gray-700 hover:text-indigo-600 transition">خانه</a>
+      <a href="#about" class="text-gray-700 hover:text-indigo-600 transition">درباره ما</a>
+      <a href="#gallery" class="text-gray-700 hover:text-indigo-600 transition">گالری</a>
+      <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition">تماس با ما</a>
+    </nav>
+    <div class="md:hidden">
+      <button id="menu-toggle" class="focus:outline-none p-2 rounded-lg hover:bg-gray-200 transition">
+        <!-- آیکون منو -->
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <!-- منوی موبایل -->
+  <div class="md:hidden hidden" id="mobile-menu">
+    <div class="px-4 pb-4 space-y-2">
+      <a href="#home" class="block py-2 px-4 bg-gray-200 rounded hover:bg-gray-300 transition">خانه</a>
+      <a href="#about" class="block py-2 px-4 bg-gray-200 rounded hover:bg-gray-300 transition">درباره ما</a>
+      <a href="#gallery" class="block py-2 px-4 bg-gray-200 rounded hover:bg-gray-300 transition">گالری</a>
+      <a href="#contact" class="block py-2 px-4 bg-gray-200 rounded hover:bg-gray-300 transition">تماس با ما</a>
+    </div>
+  </div>
+</header>
+
+<!-- بخش hero -->
+<section id="home" class="bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80');">
+  <div class="bg-black bg-opacity-50 min-h-screen flex items-center justify-center text-center px-4 py-20">
+    <div>
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">به دنیای زیبای ما خوش آمدید</h2>
+      <p class="text-lg md:text-xl text-gray-200 mb-8">ما بهترین خدمات و تصاویر را برای شما فراهم کرده‌ایم</p>
+      <a href="#about" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition">دانلود بیشتر</a>
+    </div>
+  </div>
+</section>
+
+<!-- درباره ما -->
+<section id="about" class="py-20 bg-gray-100">
+  <div class="container mx-auto px-4 text-center">
+    <h3 class="text-3xl font-bold mb-4 text-gray-800">درباره ما</h3>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-8">ما متعهدیم به ارائه بهترین تصاویر و خدمات با کیفیت بالا. هدف ما رضایت کامل شماست با طراحی‌های منحصر به فرد و حرفه‌ای.</p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="تیم ما" class="w-full h-48 object-cover rounded mb-4" />
+        <h4 class="text-xl font-semibold mb-2">تیم حرفه‌ای</h4>
+        <p class="text-gray-600">همیشه آماده خدمت رسانی با تیم مجرب و متخصص.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=600&q=80" alt="رزومه" class="w-full h-48 object-cover rounded mb-4" />
+        <h4 class="text-xl font-semibold mb-2">پروژه‌های موفق</h4>
+        <p class="text-gray-600">درخشیدن در پروژه‌های بزرگ و رضایت مشتریان.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="خدمات" class="w-full h-48 object-cover rounded mb-4" />
+        <h4 class="text-xl font-semibold mb-2">خدمات عالی</h4>
+        <p class="text-gray-600">ارائه خدمات متنوع و پشتیبانی دائم.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- گالری تصاویر -->
+<section id="gallery" class="py-20 bg-white">
+  <div class="container mx-auto px-4 text-center">
+    <h3 class="text-3xl font-bold mb-8 text-gray-800">گالری</h3>
+    <div class="grid md:grid-cols-3 gap-4">
+      <img src="https://images.unsplash.com/photo-1516117172878-fd2c41f4a759?auto=format&fit=crop&w=800&q=80" alt="تصویر 1" class="w-full h-60 object-cover rounded-lg hover:scale-105 transform transition" />
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="تصویر 2" class="w-full h-60 object-cover rounded-lg hover:scale-105 transform transition" />
+      <img src="https://images.unsplash.com/photo-1525097487452-6278ff080c31?auto=format&fit=crop&w=800&q=80" alt="تصویر 3" class="w-full h-60 object-cover rounded-lg hover:scale-105 transform transition" />
+      <img src="https://images.unsplash.com/photo-1579546929518-9e3966a4ed9d?auto=format&fit=crop&w=800&q=80" alt="تصویر 4" class="w-full h-60 object-cover rounded-lg hover:scale-105 transform transition" />
+      <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=800&q=80" alt="تصویر 5" class="w-full h-60 object-cover rounded-lg hover:scale-105 transform transition" />
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="تصویر 6" class="w-full h-60 object-cover rounded-lg hover:scale-105 transform transition" />
+    </div>
+  </div>
+</section>
+
+<!-- بخش تماس -->
+<section id="contact" class="py-20 bg-gray-100">
+  <div class="container mx-auto px-4 text-center">
+    <h3 class="text-3xl font-bold mb-4 text-gray-800">ارتباط با ما</h3>
+    <p class="mb-8 text-gray-600">در صورت نیاز به اطلاعات بیشتر، ایمیل و شماره تماس خود را در فرم زیر وارد کنید.</p>
+    <form class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg space-y-4">
+      <div>
+        <label class="block mb-2 font-semibold text-gray-700" for="name">نام و نام خانوادگی</label>
+        <input class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-300" type="text" id="name" placeholder="مثلاً علی احمدی" />
+      </div>
+      <div>
+        <label class="block mb-2 font-semibold text-gray-700" for="email">ایمیل</label>
+        <input class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-300" type="email" id="email" placeholder="example@mail.com" />
+      </div>
+      <div>
+        <label class="block mb-2 font-semibold text-gray-700" for="message">پیام</label>
+        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-300" id="message" rows="4" placeholder="پیام خود را بنویسید..."></textarea>
+      </div>
+      <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition">ارسال پیام</button>
+    </form>
+  </div>
+</section>
+
+<!-- پاورقی -->
+<footer class="bg-white border-t border-gray-300 py-6">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-gray-600">
+    <p>&copy; 2023 سایت نمونه. همه حقوق محفوظ است.</p>
+    <div class="mt-4 md:mt-0 space-x-4">
+      <a href="#" class="hover:text-indigo-600 transition">خانه</a>
+      <a href="#about" class="hover:text-indigo-600 transition">درباره ما</a>
+      <a href="#gallery" class="hover:text-indigo-600 transition">گالری</a>
+      <a href="#contact" class="hover:text-indigo-600 transition">ارتباط</a>
+    </div>
+  </div>
+</footer>
+
+<!-- اسکریپت منوی موبایل -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
